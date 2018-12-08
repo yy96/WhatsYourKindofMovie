@@ -36,5 +36,9 @@ The introduction video is here for you to get a rough idea of our project:
 ### 2. Dataset 
 We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains 27753444 ratings and 1108997 tag applications across 58098 movies. These data were created by 283228 users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
-
+Name of csv file | Size (KB) | Number of Rows | Content
+---------------- | --------- | -------------- | -------
+Movies | 968 | 58098 | movieId: ID of a movie <br> Title: title of a movie from themoviedb.org
+Movies | 968 | 58098 | movieId: ID of a movie《
+genres: genres which the movie belongs to
 
