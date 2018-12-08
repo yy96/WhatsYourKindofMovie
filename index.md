@@ -61,4 +61,4 @@ Edges - people who watch/rate the same movies
 Node Size - number of movies/ratings the person give
 Edge weights - number of movies that both node users watched in common
 ```
-[Image](/Users/yuanyuanchen/Desktop/02805 Social Graphs and interactions/Project/Project B/overall_network.png)
+[Image](WhatsYourKindofMovie/overall_network.png)
