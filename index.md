@@ -42,9 +42,8 @@ Here are some basic characteristics about the network:
         border: 1px solid black;
         }
 </style>
-
-Number of nodes | 2003
 --------------- | ----
+Number of nodes | 2003
 Number of edges | 232910
 Average degree | 232.5612
 Average shortest path distance | 1.9574773703580493
@@ -52,6 +51,7 @@ Number of connected components | 53
 
 {: .tablelines}
 
+<br>
 
 Degree centrality | Betweenness centrality | Eigenvector centrality
 ----------------- | ---------------------- | -------------- 
