@@ -62,3 +62,6 @@ Degree centrality | Betweenness centrality | Eigenvector centrality
 {: .tablelines}
 
 Explanation for degree centrality here
+Dowload dataset by putting the link in Github
+
+http://nbviewer.jupyter.org/github/yy96/WhatsYourKindofMovie/blob/master/PythonNotebook/Sentiment%20Analysis%20on%20Tags.ipynb
