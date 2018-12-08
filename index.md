@@ -53,3 +53,12 @@ Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br> tag: name of each ta
 
 {: .tablelines}
 
+### 3. Overview of Network
+The movie review network is constructed based on the following rules:
+```
+Nodes - people who write the review for the movie 
+Edges - people who watch/rate the same movies
+Node Size - number of movies/ratings the person give
+Edge weights - number of movies that both node users watched in common
+```
+[Image](/Users/yuanyuanchen/Desktop/02805 Social Graphs and interactions/Project/Project B/overall_network.png)
