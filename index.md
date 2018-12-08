@@ -73,6 +73,7 @@ Here are some basic characteristics about the network:
         }
 </style>
 
+--------------- | ----
 Number of nodes | 2003
 Number of edges | 232910
 Average degree | 232.5612
@@ -87,6 +88,7 @@ Degree centrality | Betweenness centrality | Eigenvector centrality
 0.9125874125874126 | 0.08480222837203849 | 0.06192699109472035
 0.7987012987012987 | 0.038790113817311976 | 0.06107418624610914
 0.7562437562437563 | 0.027062225532841173 | 0.06015765571794681
+
 {: .tablelines}
 
 Explanation for degree centrality here
