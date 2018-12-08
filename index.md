@@ -52,6 +52,8 @@ Number of connected components | 53
 {: .tablelines}
 
 <br>
+Degree Distribution plots:
+![Image](pictures/combined_degree_distribution.png)
 
 Degree centrality | Betweenness centrality | Eigenvector centrality
 ----------------- | ---------------------- | -------------- 
@@ -62,6 +64,12 @@ Degree centrality | Betweenness centrality | Eigenvector centrality
 {: .tablelines}
 
 Explanation for degree centrality here
-Dowload dataset by putting the link in Github
+
+<br>
+
+Community Detection:
+![Image](pictures/community_detection.png)
+
+Download dataset by putting the link in Github
 
 http://nbviewer.jupyter.org/github/yy96/WhatsYourKindofMovie/blob/master/PythonNotebook/Sentiment%20Analysis%20on%20Tags.ipynb
