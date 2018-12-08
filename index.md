@@ -33,7 +33,7 @@ Edge weights - number of movies that both node users watched in common
 ```
 The network is created as shown below
 
-![Image](overall_network.png)
+![Image](pictures/overall_network.png)
 
 Here are some basic characteristics about the network:
 
