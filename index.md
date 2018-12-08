@@ -61,4 +61,32 @@ Edges - people who watch/rate the same movies
 Node Size - number of movies/ratings the person give
 Edge weights - number of movies that both node users watched in common
 ```
+The network is created as shown below
+
 ![Image](overall_network.png)
+
+Here are some basic characteristics about the network:
+
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
+
+Number of nodes | 2003
+Number of edges | 232910
+Average degree | 232.5612
+Average shortest path distance | 1.9574773703580493
+Number of connected components | 53
+
+{: .tablelines}
+
+
+Degree centrality | Betweenness centrality | Eigenvector centrality
+----------------- | ---------------------- | -------------- 
+0.9125874125874126 | 0.08480222837203849 | 0.06192699109472035
+0.7987012987012987 | 0.038790113817311976 | 0.06107418624610914
+0.7562437562437563 | 0.027062225532841173 | 0.06015765571794681
+{: .tablelines}
+
+Explanation for degree centrality here
