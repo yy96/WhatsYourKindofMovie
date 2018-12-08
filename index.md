@@ -36,7 +36,12 @@ The introduction video is here for you to get a rough idea of our project:
 ### 2. Dataset 
 We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains 27753444 ratings and 1108997 tag applications across 58098 movies. These data were created by 283228 users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
-```
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
+
 Name of csv file | Size (KB) | Number of Rows | Content
 ---------------- | --------- | -------------- | -------
 Movies | 968 | 58098 | movieId: ID of a movie <br> Title: title of a movie from themoviedb.org <br> genres: genres which the movie belongs to
@@ -45,4 +50,6 @@ Tags | 38814 | 1108997 | userId: ID of the user <br>  movieId: ID of the movie <
 Links | 1238 | 58098 | movieId: identifier for movies used by https://movielens.org. <br> imdbId: identifier for movies used by http://www.imdb.com <br> tmdbId: identifier for movies used by https://www.themoviedb.org
 Genome-Scores | 405129 | 14862528 | movieId: identifier of the movie <br> tagId: identifier of the tag, referenced from Genome-Tags dataset <br> relevance: Scores of the movie in a particular genre (how strong it exerts this kind of content in the movie)
 Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br> tag: name of each tag
-```
+
+{: .tablelines}
+
