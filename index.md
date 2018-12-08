@@ -28,10 +28,13 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### 1. Introduction of the Project
+Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim to investigate the preference of the audience and the characteristics of commonly rated good movies and bad movies.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yy96/WhatsYourKindofMovie/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The introduction video is here for you to get a rough idea of our project:
 
-### Support or Contact
+### 2. Dataset 
+We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains 27753444 ratings and 1108997 tag applications across 58098 movies. These data were created by 283228 users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
