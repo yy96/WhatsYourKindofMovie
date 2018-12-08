@@ -73,8 +73,8 @@ Here are some basic characteristics about the network:
         }
 </style>
 
---------------- | ----
 Number of nodes | 2003
+--------------- | ----
 Number of edges | 232910
 Average degree | 232.5612
 Average shortest path distance | 1.9574773703580493
