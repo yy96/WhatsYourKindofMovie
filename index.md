@@ -24,7 +24,7 @@ Genome-Scores | 405129 | 14862528 | movieId: identifier of the movie <br> tagId:
 Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br> tag: name of each tag
 
 {: .tablelines}
-
+<br>
 - **Cleaned Datasets**
 <br>
 The data retrieved from the websites are in separate files. For the easy manipulation of data for network analysis and text analysis. We have merged and joined the datasets based on their common keys and only kept the relevant information that is needed for the analysis. After the clean-up, there are 2 master table for the further analysis
@@ -34,7 +34,6 @@ Name of csv file | Source Table | Content
 Movie Master | Links <br> Movies | **movieId: primary key** <br> Title <br> genres <br> imdbId <br> tmdbId
 Review Master | Ratings <br> Tags | **userId_movieId: primary key** <br> userId <br> movieId <br> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br> tag_combined: stores all the tags for the user for this particular movie <br> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
 
-<br>
 
 ### 3. Overview of Network
 The movie review network is constructed based on the following rules:
