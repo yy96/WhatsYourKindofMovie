@@ -70,19 +70,22 @@ Degree Centrality | Betweenness Centrality | Eigenvector Centrality
 
 - Degree Centrality
 ```
-Degree centrality is the most basic method of defining centrality, basing the centrality only on the number of neighbours a node has.
+Degree centrality is the most basic method of defining centrality, basing the centrality 
+only on the number of neighbours a node has.
 ```
 The top degree centrality is rather high this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
 
 - Betweenness Centrality
 ```
-Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
+Betweenness centrality quantifies the number of times a node acts as a bridge along the 
+shortest path between two other nodes.
 ```
 The max value is 0.085 which is close to zero. Small betweenness centrality means users are generally connected directly to each other as there are very few times that the node is acting as a bridge.
 
 - Eigenvector centrality
 ```
-The eigenvector centrality thesis read: A node is important if it is linked to by other important nodes. It is a measure of the influence of a node in a network.
+The eigenvector centrality thesis read: A node is important if it is linked to by other 
+important nodes. It is a measure of the influence of a node in a network.
 ```
 The top eigenvector centrality scores are close to zero which implies that users do not have much influence on one another even though they are top ranked based on eigenvector centrality.
 
