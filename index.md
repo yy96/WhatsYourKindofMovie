@@ -78,9 +78,11 @@ only on the number of neighbours a node has.
         border: 1px solid black;
         }
 </style>
- Centrality Measure | 1 | 2 | 3
-------------------- | - | - | -
-Degree Centrality | 0.9125874125874126 | 0.7987012987012987 | 0.7562437562437563
+Top 3 Values | 
+------------------- | 
+ 0.9125874125874126 | 
+ 0.7987012987012987 | 
+ 0.7562437562437563
 {: .tablelines}
 
 The top degree centrality is rather high this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
