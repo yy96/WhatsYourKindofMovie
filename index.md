@@ -66,8 +66,11 @@ only on the number of neighbours a node has.
 ```
 
 > Degree Centrality Top 3 Values
+<br>
 > 0.9125874125874126 
-> 0.7987012987012987 
+<br>
+> 0.7987012987012987
+<br>
 > 0.7562437562437563
 
 <style>
