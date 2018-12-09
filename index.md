@@ -5,7 +5,8 @@ Here to find out more though a short video. [Check Out the Video!] (https://www.
 
 ### 2. Data Preparation 
 - **Raw Datasets**
-We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains * *27753444* * ratings and * *1108997* * tag applications across 58098 movies. These data were created by * *283228* * users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
+<br>
+We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains *27753444* ratings and *1108997* tag applications across 58098 movies. These data were created by *283228* users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
@@ -25,12 +26,15 @@ Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br> tag: name of each ta
 {: .tablelines}
 
 - **Cleaned Datasets**
+<br>
 The data retrieved from the websites are in separate files. For the easy manipulation of data for network analysis and text analysis. We have merged and joined the datasets based on their common keys and only kept the relevant information that is needed for the analysis. After the clean-up, there are 2 master table for the further analysis
 
 Name of csv file | Source Table | Content
 ---------------- | ------------ | -------
 Movie Master | Links <br> Movies | movieId * *primary key* * <br> Title <br> genres <br> imdbId <br> tmdbId
 Review Master | Ratings <br> Tags | userId_movieId  * *primary key* * <br> userId <br> movieId <br> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br> tag_combined: stores all the tags for the user for this particular movie <br> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
+
+<br>
 
 ### 3. Overview of Network
 The movie review network is constructed based on the following rules:
@@ -64,6 +68,7 @@ Number of connected components | 53
 <br>
 Degree Distribution plots:
 ![Image](pictures/combined_degree_distribution.png)
+As seen from the loglog plot, the general shape of the degree distribution of the movie review network follows a power law where a large number of nodes have small connections and small number of nodes have large connctions.
 
 #### 3.2 Centrality Measures
 
@@ -71,6 +76,7 @@ Degree Distribution plots:
 - **Degree Centrality**
 > Degree centrality is the most basic method of defining centrality, basing the centrality 
 > only on the number of neighbours a node has.
+
 The top 3 values for degree centrality are as shown below. The top degree centrality is rather high this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
 <style>
 .tablelines table, .tablelines td, .tablelines th {
@@ -85,6 +91,7 @@ The top 3 values for degree centrality are as shown below. The top degree centra
 - **Betweenness Centrality**
 > Betweenness centrality quantifies the number of times a node acts as a bridge along the 
 > shortest path between two other nodes.
+
 The top 3 values for betweeness centrality are as shown below. The max value is 0.085 which is close to zero. Small betweenness centrality means users are generally connected directly to each other as there are very few times that the node is acting as a bridge.
 <style>
 .tablelines table, .tablelines td, .tablelines th {
@@ -99,6 +106,7 @@ The top 3 values for betweeness centrality are as shown below. The max value is 
 - **Eigenvector centrality**
 > The eigenvector centrality thesis read: A node is important if it is linked to by other 
 > important nodes. It is a measure of the influence of a node in a network.
+
 The top 3 values for eigenvector centrality are as shown below. The top eigenvector centrality scores are close to zero which implies that users do not have much influence on one another even though they are top ranked based on eigenvector centrality.
 <style>
 .tablelines table, .tablelines td, .tablelines th {
@@ -112,6 +120,8 @@ The top 3 values for eigenvector centrality are as shown below. The top eigenvec
 <br>
 #### 3.3 Community Detection:
 ![Image](pictures/community_detection.png)
+
+While this is a rather dense network , the nodes belong to the same community are closely clustered together with quite clear separation between each cluster. In the following section, we will move on to explore more about the common traits and distinct characteristics of each section.
 
 Download dataset by putting the link in Github
 
