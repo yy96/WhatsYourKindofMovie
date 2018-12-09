@@ -74,7 +74,7 @@ Degree centrality is the most basic method of defining centrality, basing the ce
 ```
 The top degree centrality is rather high this suggersts they have large number of neighbours suggesting these nodes are most likely to be clustered in the center of the network.
 
-**- Betweenness Centrality**
+- Betweenness Centrality
 ```
 Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
 ```
