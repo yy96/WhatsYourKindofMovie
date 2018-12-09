@@ -65,14 +65,6 @@ Degree centrality is the most basic method of defining centrality, basing the ce
 only on the number of neighbours a node has.
 ```
 
-> Degree Centrality Top 3 Values
-<br>
-> 0.9125874125874126 
-<br>
-> 0.7987012987012987
-<br>
-> 0.7562437562437563
-
 <style>
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
@@ -98,9 +90,11 @@ shortest path between two other nodes.
         border: 1px solid black;
         }
 </style>
- Centrality Measure | 1 | 2 | 3
-------------------- | - | - | -
-Betweenness Centrality | 0.08480222837203849 | 0.038790113817311976 | 0.027062225532841173
+Top 3 Values | 
+------------ | 
+0.08480222837203849 | 
+0.038790113817311976 | 
+0.027062225532841173 |
 {: .tablelines}
 
 The max value is 0.085 which is close to zero. Small betweenness centrality means users are generally connected directly to each other as there are very few times that the node is acting as a bridge.
@@ -116,9 +110,11 @@ important nodes. It is a measure of the influence of a node in a network.
         border: 1px solid black;
         }
 </style>
- Centrality Measure | 1 | 2 | 3
-------------------- | - | - | -
-Eigenvector Centrality | 0.06192699109472035 | 0.06107418624610914 | 0.06015765571794681
+Top 3 Values | 
+------------ | 
+0.06192699109472035  | 
+0.06107418624610914 | 
+0.06015765571794681 |
 {: .tablelines}
 
 The top eigenvector centrality scores are close to zero which implies that users do not have much influence on one another even though they are top ranked based on eigenvector centrality.
