@@ -64,7 +64,7 @@ Degree Distribution plots:
 Degree centrality is the most basic method of defining centrality, basing the centrality 
 only on the number of neighbours a node has.
 ```
-
+<div style="text-align:center">
 <style>
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
@@ -76,6 +76,7 @@ Top 3 Values |
 0.7987012987012987 | 
 0.7562437562437563 |
 {: .tablelines}
+</div>
 
 The top degree centrality is rather high this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
 
