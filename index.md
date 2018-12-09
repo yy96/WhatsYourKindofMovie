@@ -3,7 +3,7 @@ Our project will be focusing on the movie industry. Based on the dataset obtaine
 
 The introduction video is here for you to get a rough idea of our project:
 
-### 2. Dataset 
+### 2. Data Preparation 
 We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains 27753444 ratings and 1108997 tag applications across 58098 movies. These data were created by 283228 users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
 <style>
@@ -35,6 +35,7 @@ The network is created as shown below
 
 ![Image](pictures/overall_network.png)
 
+#### 3.1 Basic Characteristics for the Network
 Here are some basic characteristics about the network:
 
 <style>
@@ -55,7 +56,9 @@ Number of connected components | 53
 Degree Distribution plots:
 ![Image](pictures/combined_degree_distribution.png)
 
-Degree centrality | Betweenness centrality | Eigenvector centrality
+#### 3.2 Centrality Measures
+
+Degree Centrality | Betweenness Centrality | Eigenvector Centrality
 ----------------- | ---------------------- | -------------- 
 0.9125874125874126 | 0.08480222837203849 | 0.06192699109472035
 0.7987012987012987 | 0.038790113817311976 | 0.06107418624610914
@@ -63,11 +66,27 @@ Degree centrality | Betweenness centrality | Eigenvector centrality
 
 {: .tablelines}
 
-Explanation for degree centrality here
-
 <br>
 
-Community Detection:
+**Degree Centrality**
+```
+Degree centrality is the most basic method of defining centrality, basing the centrality only on the number of neighbours a node has.
+```
+The top degree centrality is rather high this suggersts they have large number of neighbours suggesting these nodes are most likely to be clustered in the center of the network.
+
+**Betweenness Centrality**
+```
+Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
+```
+The max value is 0.085 which is close to zero. Small betweenness centrality means users are generally connected directly to each other as there are very few times that the node is acting as a bridge.
+
+**Eigenvector centrality**
+```
+The eigenvector centrality thesis read: A node is important if it is linked to by other important nodes.
+```
+The top eigenvector centrality scores are close to zero which implies that users do not have much influence on one another.
+
+#### 3.3 Community Detection:
 ![Image](pictures/community_detection.png)
 
 Download dataset by putting the link in Github
