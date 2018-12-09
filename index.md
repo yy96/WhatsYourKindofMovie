@@ -68,7 +68,7 @@ Degree Centrality | Betweenness Centrality | Eigenvector Centrality
 
 <br>
 
-**> Degree Centrality**
+> Degree Centrality
 ```
 Degree centrality is the most basic method of defining centrality, basing the centrality only on the number of neighbours a node has.
 ```
