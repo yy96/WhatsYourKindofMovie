@@ -58,21 +58,18 @@ Degree Distribution plots:
 
 #### 3.2 Centrality Measures
 
-Degree Centrality | Betweenness Centrality | Eigenvector Centrality
------------------ | ---------------------- | -------------- 
-0.9125874125874126 | 0.08480222837203849 | 0.06192699109472035
-0.7987012987012987 | 0.038790113817311976 | 0.06107418624610914
-0.7562437562437563 | 0.027062225532841173 | 0.06015765571794681
 
-{: .tablelines}
-
-
-- Degree Centrality
+- **Degree Centrality**
 ```
 Degree centrality is the most basic method of defining centrality, basing the centrality 
 only on the number of neighbours a node has.
 ```
-<br>
+
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
  Centrality Measure | 1 | 2 | 3
 ------------------- | - | - | -
 Degree Centrality | 0.9125874125874126 | 0.7987012987012987 | 0.7562437562437563
@@ -80,12 +77,17 @@ Degree Centrality | 0.9125874125874126 | 0.7987012987012987 | 0.7562437562437563
 
 The top degree centrality is rather high this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
 
-- Betweenness Centrality
+- **Betweenness Centrality**
 ```
 Betweenness centrality quantifies the number of times a node acts as a bridge along the 
 shortest path between two other nodes.
 ```
-<br>
+
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
  Centrality Measure | 1 | 2 | 3
 ------------------- | - | - | -
 Betweenness Centrality | 0.08480222837203849 | 0.038790113817311976 | 0.027062225532841173
@@ -93,12 +95,17 @@ Betweenness Centrality | 0.08480222837203849 | 0.038790113817311976 | 0.02706222
 
 The max value is 0.085 which is close to zero. Small betweenness centrality means users are generally connected directly to each other as there are very few times that the node is acting as a bridge.
 
-- Eigenvector centrality
+- **Eigenvector centrality**
 ```
 The eigenvector centrality thesis read: A node is important if it is linked to by other 
 important nodes. It is a measure of the influence of a node in a network.
 ```
-<br>
+
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
  Centrality Measure | 1 | 2 | 3
 ------------------- | - | - | -
 Eigenvector Centrality | 0.06192699109472035 | 0.06107418624610914 | 0.06015765571794681
