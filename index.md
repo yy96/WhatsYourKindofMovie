@@ -1,10 +1,11 @@
 ### 1. Introduction of the Project
-Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim to investigate the preference of the audience and the characteristics of commonly rated good movies and bad movies.
+Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim **to investigate the preference of the audience and the characteristics of commonly rated good movies and bad movies.**
 
-The introduction video is here for you to get a rough idea of our project:
+Here to find out more though a short video. [Check Out the Video!] (https://www.youtube.com/watch?v=XTxMXeBN4kg&t=5s)
 
 ### 2. Data Preparation 
-We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains 27753444 ratings and 1108997 tag applications across 58098 movies. These data were created by 283228 users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
+- **Raw Datasets**
+We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains * *27753444* * ratings and * *1108997* * tag applications across 58098 movies. These data were created by * *283228* * users between January 09, 1995 and September 26, 2018. The total size of the datasets is 265MB. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
@@ -22,6 +23,14 @@ Genome-Scores | 405129 | 14862528 | movieId: identifier of the movie <br> tagId:
 Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br> tag: name of each tag
 
 {: .tablelines}
+
+- **Cleaned Datasets**
+The data retrieved from the websites are in separate files. For the easy manipulation of data for network analysis and text analysis. We have merged and joined the datasets based on their common keys and only kept the relevant information that is needed for the analysis. After the clean-up, there are 2 master table for the further analysis
+
+Name of csv file | Source Table | Content
+---------------- | ------------ | -------
+Movie Master | Links <br> Movies | movieId * *primary key* * <br> Title <br> genres <br> imdbId <br> tmdbId
+Review Master | Ratings <br> Tags | userId_movieId  * *primary key* * <br> userId <br> movieId <br> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br> tag_combined: stores all the tags for the user for this particular movie <br> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
 
 ### 3. Overview of Network
 The movie review network is constructed based on the following rules:
@@ -62,47 +71,41 @@ Degree Distribution plots:
 - **Degree Centrality**
 > Degree centrality is the most basic method of defining centrality, basing the centrality 
 > only on the number of neighbours a node has.
-
 The top 3 values for degree centrality are as shown below. The top degree centrality is rather high this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
-
 <style>
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
         }
 </style>
+1 | 2 | 3
 ------------------ | ------------------ | ----------------- 
 0.9125874125874126 | 0.7987012987012987 | 0.7562437562437563
 {: .tablelines}
 <br>
 - **Betweenness Centrality**
-```
-Betweenness centrality quantifies the number of times a node acts as a bridge along the 
-shortest path between two other nodes.
-```
-
+> Betweenness centrality quantifies the number of times a node acts as a bridge along the 
+> shortest path between two other nodes.
 The top 3 values for betweeness centrality are as shown below. The max value is 0.085 which is close to zero. Small betweenness centrality means users are generally connected directly to each other as there are very few times that the node is acting as a bridge.
-
 <style>
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
         }
 </style>
+1 | 2 | 3
 ------------------- | -------------------- | -------------------- 
 0.08480222837203849 | 0.038790113817311976 | 0.027062225532841173 
 {: .tablelines}
 <br>
 - **Eigenvector centrality**
-```
-The eigenvector centrality thesis read: A node is important if it is linked to by other 
-important nodes. It is a measure of the influence of a node in a network.
-```
+> The eigenvector centrality thesis read: A node is important if it is linked to by other 
+> important nodes. It is a measure of the influence of a node in a network.
 The top 3 values for eigenvector centrality are as shown below. The top eigenvector centrality scores are close to zero which implies that users do not have much influence on one another even though they are top ranked based on eigenvector centrality.
-
 <style>
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
         }
 </style>
+1 | 2 | 3
 ------------------- | -------------------- | --------------------  
 0.06192699109472035 | 0.06107418624610914 | 0.06015765571794681 
 {: .tablelines}
