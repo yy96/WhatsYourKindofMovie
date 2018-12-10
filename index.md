@@ -1,5 +1,5 @@
 ## 1. Introduction of the Project
-Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim **to investigate the preference of the audience and the characteristics of commonly rated good movies and bad movies.** [Go to Network Analyis](#3.network-analysis) 
+Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim **to investigate the preference of the audience and the characteristics of commonly rated good movies and bad movies.** [Go to Network Analyis](#3.-network-analysis) 
 
 Here to find out more though a short video. [Check Out the Video!](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=5s)
 
