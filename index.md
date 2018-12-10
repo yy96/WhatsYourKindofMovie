@@ -1,7 +1,8 @@
 ## 1. Introduction of the Project
 Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim **to investigate the preference of the audience and the characteristics of commonly rated good movies and bad movies.** 
 
-Here to find out more though a short video. [![Check Out the Video!](https://j.gifs.com/4RgkL2.gif)](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=)
+Here to find out more though a short video. (**Check out here!**)
+[![Check Out the Video!](https://j.gifs.com/4RgkL2.gif)](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=)
 
 ## 2. Data Preparation 
 - **Raw Datasets**
