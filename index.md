@@ -141,18 +141,19 @@ We have constructed the network based on the rules mentioned above. The network 
 As the network is pretty dense, it is hard to deduct the relationship between the number of movies an user has watched and the avaerage ratings the user gives. Thus, we will investigate the relationship further by using a scatter plot.
 
 ![Ratings Network](pictures/Rating_network.jpg)
-<br/>
+\
 ![Ratings Scatterplot](pictures/Rating_scatterplot.jpg)
-<br/>
+\
 The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
 - **Sentiment Score Network**
 
-### 3.3 Community Detection
-![Image](pictures/community_detection.png)
+#### 3.3.2 Reviews Network
+![Reviews Network](pictures/Review_network.jpg)
 
-While this is a rather dense network , the nodes belong to the same community are closely clustered together with quite clear separation between each cluster. In the following section, we will move on to explore more about the common traits and distinct characteristics of each section.
+Similar to the ratings network (Section 3.3), users who have watched a greater number of movies has a larger sized node and users who have a higher average sentimental score are darker in color. 
+From the network, we see that there are majority of users having low average sentimental scores representing by the light colour nodes. They also tend to have watched a higher number of movies compared to those with high sentimental scores. This could be due to such users having a higher expectation of movies since they have watched good movies which have left a benchmark on how a good movie should be like.
 
-Download dataset by putting the link in Github
+![Reviews scatterplot](pictures/Review_scatterplot.jpg)
 
-http://nbviewer.jupyter.org/github/yy96/WhatsYourKindofMovie/blob/master/PythonNotebook/Sentiment%20Analysis%20on%20Tags.ipynb
+Based on the scatter plot, there seems to be a weak negative correlation between the number of movies an user watch and the average sentiment score the user gives. However, we need to note the results might not be accurate due to the limited sample size. This is due to there are a significant number of NAs which have to be excluded from the analysis, thus, limiting the sample size for the investigation.
