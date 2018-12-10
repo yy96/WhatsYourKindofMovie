@@ -137,7 +137,7 @@ Node Colour - The average ratings/sentiment scores the user give based onthe col
 - **Ratings Network**
 We have constructed the network based on the rules mentioned above. The network is as shown below. As it is a pretty dense network, we plotted a scatter plot to investigate the relationship further. 
 
-![Network](pictures/Ratings Network.png)
+![Network](pictures/Ratings_Network.png)
 
 Due to the densely populated graph, the relationship between the node size and node colour is not clear. With the additional scatter plot, we hope to get a clearer picture. The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line indicate there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
