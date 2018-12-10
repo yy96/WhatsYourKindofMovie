@@ -35,7 +35,7 @@ Movie Master | Links <br> Movies | **movieId: primary key** <br> Title <br> genr
 Review Master | Ratings <br> Tags | **userId_movieId: primary key** <br> userId <br> movieId <br> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br> tag_combined: stores all the tags for the user for this particular movie <br> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
 
 
-## Network Analysis
+## 3. Network Analysis
 
 ### 3.1 Netowrk Building
 The movie review network is constructed based on the following rules:
