@@ -117,10 +117,10 @@ The top 3 values for eigenvector centrality are as shown below. The top eigenvec
 </style>
 1 | 2 | 3
 ------------------- | -------------------- | --------------------  
-0.06192699109472035 | 0.06107418624610914 | 0.06015765571794681 
+0.06193 | 0.06107 | 0.06016 
 {: .tablelines}
 
-#### 3.2.3 Exploring Potential Correlations in Nodes' Attributes
+### 3.3 Potential Correlation in Ratings Network 
 In this section we are aiming to the potential correlation by assigning relevant information as the attributes for the nodes. We are interested to find out the relationship between the active-ness of an user and the average ratings/sentiment scores he/she gives.The defintion for the terms used are as follow:
 
 ```
@@ -130,18 +130,21 @@ Average Sentiment Scores - Sentiment scores are calculated based on the tags giv
 This is the average results for the sentiment scores derived from all the tags the user has given.
 ```
 
-We will approach the problem by building *Rating Netwok* and *Sentiment Score Network*. Beisdes the rules for the general network, the additional features for these new networks will be:
+We will approach the problem by building *Rating Netwok* and *Sentiment Score Network*. Besides the rules for the general network, the additional features for these new networks will be:
 ```
 Node Size - Number of distinct movies the user watched
 Node Colour - The average ratings/sentiment scores the user give based onthe colour gradient
 ```
 
-- **Ratings Network**
-We have constructed the network based on the rules mentioned above. The network is as shown below. As it is a pretty dense network, we plotted a scatter plot to investigate the relationship further. 
+#### 3.3.1 Ratings Network
+We have constructed the network based on the rules mentioned above. The network is as shown below. As mentioned before, the node size represents the number of movie a user has watched. The color gradient represent the average rating score which each user gives. The higher the rating score, the darker the color. 
+As the network is pretty dense, it is hard to deduct the relationship between the number of movies an user has watched and the avaerage ratings the user gives. Thus, we will investigate the relationship further by using a scatter plot.
 
-![Network](pictures/Ratings_Network.png)
-
-Due to the densely populated graph, the relationship between the node size and node colour is not clear. With the additional scatter plot, we hope to get a clearer picture. The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line indicate there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
+![Ratings Network](pictures/Rating_network.jpg)
+<br>
+![Ratings Scatterplot](pictures/Rating_scatterplot.jpg)
+<br>
+The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
 - **Sentiment Score Network**
 
