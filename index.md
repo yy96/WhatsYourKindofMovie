@@ -141,9 +141,9 @@ We have constructed the network based on the rules mentioned above. The network 
 As the network is pretty dense, it is hard to deduct the relationship between the number of movies an user has watched and the avaerage ratings the user gives. Thus, we will investigate the relationship further by using a scatter plot.
 
 ![Ratings Network](pictures/Rating_network.jpg)
-<br/>>
+<br/>
 ![Ratings Scatterplot](pictures/Rating_scatterplot.jpg)
-<br/>>
+<br/>
 The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
 - **Sentiment Score Network**
