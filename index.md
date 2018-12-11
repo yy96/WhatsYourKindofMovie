@@ -323,3 +323,51 @@ For the last community, the words are all pretty positive. This group of users s
 ### 5.4 Movie Genres among Communities 
 #### 5.4.1 Top Movie Genres for each Community
 *       **Community 1**
+<figure>
+  <img src="pictures/Community_1_movie_wordCloud.jpg.jpg" alt="Community_1_movie_wordCloud.jpg"/>
+  <h6 position="center">Word cloud of Community 1's movie genres</h6>
+</figure>
+Community 1 users likes to watch `Drama`, `Action`, `Comedy`, `Thriller` movies genres. These genres of movies often contain the dramatic plots.
+
+*       **Community 2**
+<figure>
+  <img src="pictures/Community_2_movie_wordCloud.jpg.jpg" alt="Community_2_movie_wordCloud.jpg"/>
+  <h6 position="center">Word cloud of Community 2's movie genres</h6>
+</figure>
+We see that users from Community 2 likes to watch `Drama`, `Comedy`, `Thriller` and `Action` movies. `Romance` and `Adventure` seems to stand out next which suggest this genre could be distinctive to this community.
+
+*       **Community 3**
+<figure>
+  <img src="pictures/Community_3_movie_wordCloud.jpg.jpg" alt="Community_3_movie_wordCloud.jpg"/>
+  <h6 position="center">Word cloud of Community 3's movie genres</h6>
+</figure>
+Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
+
+*       **Community 3**
+<figure>
+  <img src="pictures/Community_3_movie_wordCloud.jpg.jpg" alt="Community_3_movie_wordCloud.jpg"/>
+  <h6 style=test-align:"center";>Word cloud of Community 3's movie genres</h6>
+</figure>
+Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
+
+*       **Community 4**
+<figure>
+  <img src="pictures/Community_4_movie_wordCloud.jpg.jpg" alt="Community_4_movie_wordCloud.jpg"/>
+  <h6 style=test-align:"center";>Word cloud of Community 4's movie genres</h6>
+</figure>
+Like the previous three communities, users from Community 3 likes to watch `Action`, `Drama` and `Comedy` movies. Surprisingly, `Thriller` is not the top in the list of most watched genres. We also observed that users from Community 4 have a tendency to watch `Adventure` genre as well. 
+
+> As we observed, Action, Comedy and Drama are the most common movie genres among users from all four communities we have. Tags which are likely to be associated with Action movies such as "predictable", "dark" and "twist" are thus the top common tags for all communities. 
+
+On the other hand, we also notices the difference in the communities. 
+
+Other than Action movies, Community 1 users tend to watch Horror movies which explains its unique tags such as "atmospheric". Users in Community 2 tend to watch Romance and Adventure movies, thus the top unique tags for them are words like "love", "romance" and "inspirational". Community 3 users prefer movies of Sci-Fi and Romance. This leads to tags such as "romantic" and "scifi". While users from Community 4 are more interested in Adventure and Thriller movies. This aligns with its top tags of "survival" and "foster" (foster relationships during an adventure). 
+
+Besides looking at the general picture for each community, we would like to further explore the distinctive characteristics for each community.
+
+#### 5.4.2 Distinct Movie Genres for each Community
+*       **Community 1**
+
+
+***
+## 6. Conclusion 
