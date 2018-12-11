@@ -259,11 +259,9 @@ Through our research, we found that the most frequently used tag by all users is
 | 9 | twist | 19 | war | 29 | funny |
 | 10 | bad | 20 | nudity | 30 | humor |
 
-By examining the most frequent used tags, we see that users usually give tags which are genres or themes of the movies they watch, and these tags tend to be neutral. Thus, we can infer that the tags given by users are closely associated with the movies they have watched. This suggests the community may be defined by different genres of movies the user watch. In the following parts, we will study the behaviour of users in selecting movie genres in various communities.
+By examining the most frequent used tags, we see that users usually give tags which are genres or themes of the movies they watch, and these tags tend to be neutral. Thus, we can infer that the tags given by users are closely associated with the movies they have watched. This suggests the community may be defined by different genres of movies the user watch. In the following section (5.4), we will study the behaviour of users in selecting movie genres in various communities.
 
 #### 5.3.2 WordCloud for each Community 
-Looking at the top 10 most important tags ranked based on TF-IDF, the score obtained are rather small. Thus, we need to transform the TF-IDF score when feeding to the word cloud generation. This is done by times the original TF-IDF score with a factor of 1000. The rationale of choosing 1000 is due the max TF-IDF being 0.00903 (3 significant figures) and after the product we will obain 9.03 which will roughly allow us to transform the scale to 1-10. Furthermore, the fact that the top 10 TF-IDF scores being small suggests, these tags are probably seen in other communities as well. It suggests there are common traints among the 4 communities identified. 
-
 *       **Community 1**
 <figure style="text-align: center;">
   <img src="pictures/Community_1_tags_wordCloud.jpg" alt="Word cloud of Community 1's tags"/>
