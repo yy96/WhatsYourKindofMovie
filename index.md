@@ -239,6 +239,19 @@ The sentiment score distributions and the average sentiment scores appear to be 
 *       **Top 1 frequently used tags by all users** <br/>
 Through our research, we found that the most frequently used tag by all users is `Comedy`. 
 
+| No.  | Tag | No.  | Tag | No.  | Tag | No.  | Tag |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 1 | comedy | 11 | plot | 21 | appealing |
+| 2 | atmospheric | 12 | visually | 22 | predictable |
+| 3 | dark | 13 | romance | 23 | true |
+| 4 | horror | 14 | book | 24 | acting |
+| 5 | based | 15 | action | 25 | drama |
+| 6 | scifi | 16 | space | 26 | dystopia |
+| 7 | ending | 17 | great | 27 | friendship |
+| 8 | story | 18 | film | 28 | thriller |
+| 9 | twist | 19 | war | 29 | funny |
+| 10 | bad | 20 | nudity | 30 | humor |
+
 *       **Top 30 frequently used tags by all users**
 1.      comedy
 2.      atmospheric
