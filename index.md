@@ -138,14 +138,20 @@ Node Colour - The average ratings/sentiment scores the user give based onthe col
 We have constructed the network based on the rules mentioned above. The network is as shown below. As mentioned before, the node size represents the number of movie a user has watched. The color gradient represent the average rating score which each user gives. The higher the rating score, the darker the color. 
 As the network is pretty dense, it is hard to deduct the relationship between the number of movies an user has watched and the avaerage ratings the user gives. Thus, we will investigate the relationship further by using a scatter plot.
 
-![Ratings Network](pictures/Rating_network.jpg)
+<figure style="text-align: center;">
+  <img src="pictures/Rating_network.jpg" alt="Ratings network"/>
+  <h5 style="text-align: center;">Ratings Network</h5>
+</figure>
 
-![Ratings Scatterplot](pictures/Rating_scatterplot.jpg)
+<figure style="text-align: center;">
+  <img src="pictures/Rating_scatterplot.jpg" alt="Ratings scatterplot"/>
+  <h5 style="text-align: center;">Scatterplot of Total movies watched vs Rating score</h5>
+</figure>
 
 The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
 #### 3.3.2 Reviews Network
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Review_network.jpg" alt="Review network"/>
   <h5 style="text-align: center;">Reviews Network</h5>
 </figure>
@@ -153,7 +159,7 @@ The scatter plot can be roughly divided into 3 sections, the vertical line at th
 Similar to the ratings network (Section 3.3), users who have watched a greater number of movies has a larger sized node and users who have a higher average sentimental score are darker in color. 
 From the network, we see that there are majority of users having low average sentimental scores representing by the light colour nodes. They also tend to have watched a higher number of movies compared to those with high sentimental scores. This could be due to such users having a higher expectation of movies since they have watched good movies which have left a benchmark on how a good movie should be like.
 
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Review_scatterplot.jpg" alt="Review scatterplot"/>
   <h5 style="text-align: center;">Scatterplot of Total movies watched vs Sentiment score</h5>
 </figure>
@@ -161,7 +167,7 @@ From the network, we see that there are majority of users having low average sen
 Based on the scatter plot, there seems to be a weak negative correlation between the number of movies an user watch and the average sentiment score the user gives. However, we need to note the results might not be accurate due to the limited sample size. This is due to there are a significant number of NAs which have to be excluded from the analysis, thus, limiting the sample size for the investigation.
 ***
 ## 4. Community Detection
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_network.jpg" alt="Community network"/>
   <h5 style="text-align: center;">Community network</h5>
 </figure>
@@ -176,14 +182,14 @@ In this section we would like to determine if the communities are split by their
 
 After we have identified the corresponding communities that each user belongs to, we calculated the *average rating score* for each user and gathered the proportion which they occupy in their respective community. 
 
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Average_rating_score_tables.jpg" alt="Average ratings proportions"/>
   <h5 style="text-align: center;">Average ratings proportions</h5>
 </figure>
 
 If the communities are splited by average rating, then majority of the users in each community should have the corresponding average rating. However, looking at the top 5 rating groups of each community, they are less than 10% of their respective population. Hence, we would like to conclude that the communities are not split by the average ratings given by users.
 
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Rating_vs_sentiment_scatterplot.jpg" alt="Average rating vs Sentimental score"/>
   <h5 style="text-align: center;">Average rating vs Sentimental score</h5>
 </figure>
@@ -192,12 +198,12 @@ The above is the scatter plot of Average Rating VS Sentiment Score given by each
 
 ### 5.2 Sentiment Scores among Communities
 #### 5.2.1 Distribution of Overall Sentiment Scores
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Sentiment_distribution_1.jpg" alt="sentiment plot 1"/>
   <h5 style="text-align: center;">Sentiment distribution (with score 0)</h5>
 </figure>
-<br/>
-<figure>
+
+<figure style="text-align: center;">
   <img src="pictures/Sentiment_distribution_2.jpg" alt="sentiment plot 2"/>
   <h5 style="text-align: center;">Sentiment distribution (without score 0)</h5>
 </figure>
@@ -205,7 +211,7 @@ The above is the scatter plot of Average Rating VS Sentiment Score given by each
 Words with sentiment score of 0 are usually neutral or not included in the happiness index table. While we study the distribution of overall sentiment scores given by all users, we discard those of 0 sentiment score and find that the rest of the scores actually follow a normal distribution, with mean of 6, which is slightly positive. 
 
 #### 5.2.2 Sentiment Scores for each Communities
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Sentimental_scores.jpg" alt="Sentimental scores for each community"/>
   <h5 style="text-align: center;">Sentiment scores for each community</h5>
 </figure>
@@ -255,28 +261,28 @@ By examining the most frequent used tags, we see that users usually give tags wh
 Looking at the top 10 most important tags ranked based on TF-IDF, the score obtained are rather small. Thus, we need to transform the TF-IDF score when feeding to the word cloud generation. This is done by times the original TF-IDF score with a factor of 1000. The rationale of choosing 1000 is due the max TF-IDF being 0.00903 (3 significant figures) and after the product we will obain 9.03 which will roughly allow us to transform the scale to 1-10. Furthermore, the fact that the top 10 TF-IDF scores being small suggests, these tags are probably seen in other communities as well. It suggests there are common traints among the 4 communities identified. 
 
 *       **Community 1**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_1_tags_wordCloud.jpg" alt="Word cloud of Community 1's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 1's tags</h5>
 </figure>
 Words such as might, opera, heist and madrid defines community one as they are much bigger in size and can be easily notced in the word cloud. We also see words such as comedy, horror, family that describes genres of movies. This suggest that majority of community one users tend to watch such genres.
 
 *       **Community 2**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_2_tags_wordCloud.jpg" alt="Word cloud of Community 2's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 2's tags</h5>
 </figure>
 Words such as witch, fantasy, comedy defines community two. These words suggest that community two users tend to watch fairy tale, cartoonic genres of movies or movies that contain more imaginery elements. Furthermore, we also see words such as ghibli, animation and foreign which may also suggest they watch movies that are made in other countries such as Japan.
 
 *       **Community 3**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_3_tags_wordCloud.jpg" alt="Word cloud of Community 3's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 3's tags</h5>
 </figure>
 Words such as century, 18th and conversation defines community three. We also see words such as lewis, austen which are possibly the people related to the movie. For example, austen may refer to Jane Austen and the books that are written by her. Her stories are mostly based on the lives in 18th. This corresponds to the highlighted 18th in the word cloud. Time in the movie production seems to be an important characteristic for this community. The users in this community are likely to have a preference for movies that features the stories during 18th and 19th centuries. They might be in favour of the production by particular writer or actor.
 
 *       **Community 4**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_4_tags_wordCloud.jpg" alt="Word cloud of Community 4's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 4's tags</h5>
 </figure>
@@ -335,35 +341,35 @@ For the last community, the words are all pretty positive. This group of users s
 ### 5.4 Movie Genres among Communities 
 #### 5.4.1 Top Movie Genres for each Community
 *       **Community 1**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_1_movie_wordCloud.jpg" alt="Community_1_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 1's movie genres</h5>
 </figure>
 Community 1 users likes to watch `Drama`, `Action`, `Comedy`, `Thriller` movies genres. These genres of movies often contain the dramatic plots.
 
 *       **Community 2**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_2_movie_wordCloud.jpg" alt="Community_2_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 2's movie genres</h5>
 </figure>
 We see that users from Community 2 likes to watch `Drama`, `Comedy`, `Thriller` and `Action` movies. `Romance` and `Adventure` seems to stand out next which suggest this genre could be distinctive to this community.
 
 *       **Community 3**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_3_movie_wordCloud.jpg" alt="Community_3_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
 </figure>
 Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
 
 *       **Community 3**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_3_movie_wordCloud.jpg" alt="Community_3_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
 </figure>
 Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
 
 *       **Community 4**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_4_movie_wordCloud.jpg" alt="Community_4_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 4's movie genres</h5>
 </figure>
@@ -379,14 +385,14 @@ Besides looking at the general picture for each community, we would like to furt
 
 #### 5.4.2 Distinct Movie Genres for each Community
 *       **Community 1**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_1_distinct_movies.jpg" alt="Community_1_distinct_movies.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 1's movie genres</h5>
 </figure>
 We see that the distinct genres in Community 1 are `Animation` and `Horror`.
 
 *       **Community 2**
-<figure>
+<figure style="text-align: center;">
   <img src="pictures/Community_2_distinct_movies.jpg" alt="Community_2_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 2's movie genres</h5>
 </figure>
