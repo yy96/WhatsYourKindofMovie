@@ -393,15 +393,15 @@ We see that the distinct genres in Community 1 are `Animation` and `Horror`.
 We see that the distinct genres in Community 2 are `Fantasy` and `Horror`.
 
 *       **Community 3**
-<figure>
-  <img style="text-align: center;" src="pictures/Community_3_distinct_movies.jpg" alt="Community_3_movie_wordCloud.jpg"/>
+<figure style="text-align: center;">
+  <img src="pictures/Community_3_distinct_movies.jpg" alt="Community_3_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
 </figure>
 We see that the distinct genres in Community 3 are `Fantasy` and `Mystery`.
 
 *       **Community 4**
-<figure>
-  <img style="text-align: center;" src="pictures/Community_4_distinct_movies.jpg" alt="Community_4_movie_wordCloud.jpg"/>
+<figure style="text-align: center;">
+  <img src="pictures/Community_4_distinct_movies.jpg" alt="Community_4_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 4's movie genres</h5>
 </figure>
 We see that the distinct genres in Community 4 are `Animation` and `Fantasy`.
