@@ -266,7 +266,7 @@ Words such as century, 18th and conversation defines community three. We also se
 *       **Community 4**
 <figure>
   <img src="pictures/Community_4_tags_wordCloud.jpg" alt="Word cloud of Community 4's tags"/>
-  <h6 text-align="center">Word cloud of Community 4's tags</h6>
+  <h6 position="center">Word cloud of Community 4's tags</h6>
 </figure>
 As we understand previously, community four is much smaller by size compared to other communities. Thus, the tags featured in the word cloud will also be less. It is interesting to note that the top 10 important tags shares the same score. This means that each of these tags hold equal importance in defining community four. Words such as informatics, education, tearjerking, inspirational seems to suggest that community four users tend to movies that are more informative and have educational values. In particular, there are quite a number of words that are related to a specifc academic topic such as informatics, crptography and code.
 
@@ -278,6 +278,7 @@ As we understand previously, community four is much smaller by size compared to 
 3.      action
 4.      story
 5.      ending
+
 The top 5 tags are as shown above. It suggests that movie genres including `comedy`, `horror`, `action` and `story` are popular for all communities. 
 
 #### 5.3.4 Non-Common Tags for each Communities 
@@ -287,6 +288,7 @@ The top 5 tags are as shown above. It suggests that movie genres including `come
 3.      dark
 4.      adventure
 5.      twist
+
 The top 5 tags for community 1 are very much related to the *excitement* of the plot. Users in this community seems to be more interested in movie that have twisted plots with *dramatic storylines* such as adventure type of movies.
 
 *       **Top 5 non-common tags given by Community 2 users**
@@ -295,6 +297,7 @@ The top 5 tags for community 1 are very much related to the *excitement* of the 
 3.      female
 4.      inspirational
 5.      friendship
+
 The tags highlighted in community 2 are more related to *emotional feelings* and *relationship*. They put the emphasis on the emotional touch created by the movie. This group of users probably favours more for movies that are emotional themes. 
 
 *       **Top 5 non-common tags given by Community 3 users**
@@ -303,6 +306,7 @@ The tags highlighted in community 2 are more related to *emotional feelings* and
 3.      dark
 4.      period
 5.      austen
+
 This group of users seems to have a mixed taste. Both `scifi` and `period` are highlighted in the top 5 tags. While scifi indicates they have a favour towards science fiction which are things that are more modern, period and `austen` indicate they do have a favour towards movies that are developed from well-known literatures as well. 
 
 *       **Top 5 non-common tags given by Community 4 users**
@@ -311,6 +315,7 @@ This group of users seems to have a mixed taste. Both `scifi` and `period` are h
 3.      inspirational
 4.      true
 5.      bittersweet
+
 For the last community, the words are all pretty positive. This group of users seem to prefer the movies that pass a positive information by inferring from text including `motivation` and `inspirational`. They are looking for the element of growth in the movies they would like to watch. 
 
 > By looking at the tags, we find out the tags for each community are very much linked to different movie genres. Thus, we would like further find out the movie genres that are related to each communities and explore the common and distinct movie genres favoured by different communities.
