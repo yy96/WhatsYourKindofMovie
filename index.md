@@ -190,7 +190,7 @@ Using python's Louvain community detection algorithm to identifiy communities in
 
 ***
 
-## 5. Investigation on Characteristics among Communities 
+## 5. Community Analysis 
 After obtaining four communities from the previous section, we would like to study further on how the communities are formed and what the distinct characteristics of each community are. We will be focusing on the following criterias for study: **Average ratings**, **Sentimental scores**, **Tags analysis** and **Movie genres**. 
 
 ### 5.1 Average Ratings among Communities
@@ -355,7 +355,7 @@ For the last community, the words are all pretty positive. This group of users s
 <br/>
 > By looking at the tags, we find out the tags for each community are very much linked to different movie genres. Thus, we would like further find out the movie genres that are related to each communities and explore the common and distinct movie genres favoured by different communities.
 
-### 5.4 Movie Genres among Communities 
+### 5.4 Genre Analysis
 #### 5.4.1 Top Movie Genres for each Community
 *       **Community 1**
 <figure style="text-align: center;">
