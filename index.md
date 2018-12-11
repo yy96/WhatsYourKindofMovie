@@ -149,7 +149,7 @@ The scatter plot can be roughly divided into 3 sections, the vertical line at th
 #### 3.3.2 Reviews Network
 <figure>
   <img src="pictures/Review_network.jpg" alt="my alt text"/>
-  <figcaption style="center">Reviews Network</figcaption>
+  <figcaption text-align="center">Reviews Network</figcaption>
 </figure>
 
 Similar to the ratings network (Section 3.3), users who have watched a greater number of movies has a larger sized node and users who have a higher average sentimental score are darker in color. 
