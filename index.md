@@ -440,5 +440,5 @@ However, we understand there are limitations in the current approach. Firstly, t
 To further improve our projects, we will extract more information for the movies watched in each community, so our text analysis will extend beyond the tags given by the user. Furthermore, instead of using the happiness index dictionary, we can leverage on other dictionaries to compute sentiment score which are more suited for the analysis in this case.
 
 <div style="style="text-align: center;">
-        <h1>Thank you for reading!<h1>
+        <h1>Thank you for reading!</h1>
 </div>
