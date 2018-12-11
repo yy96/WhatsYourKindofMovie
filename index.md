@@ -379,7 +379,45 @@ Besides looking at the general picture for each community, we would like to furt
 
 #### 5.4.2 Distinct Movie Genres for each Community
 *       **Community 1**
+<figure>
+  <img src="pictures/Community_1_distinct_movies.jpg" alt="Community_1_distinct_movies.jpg"/>
+  <h5 style="text-align: center;">Word cloud of Community 1's movie genres</h5>
+</figure>
+We see that the distinct genres in Community 1 are `Animation` and `Horror`.
 
+*       **Community 2**
+<figure>
+  <img src="pictures/Community_2_distinct_movies.jpg" alt="Community_2_movie_wordCloud.jpg"/>
+  <h5 style="text-align: center;">Word cloud of Community 2's movie genres</h5>
+</figure>
+We see that the distinct genres in Community 2 are `Fantasy` and `Horror`.
+
+*       **Community 3**
+<figure>
+  <img src="pictures/Community_3_distinct_movies.jpg" alt="Community_3_movie_wordCloud.jpg"/>
+  <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
+</figure>
+We see that the distinct genres in Community 3 are `Fantasy` and `Mystery`.
+
+*       **Community 4**
+<figure>
+  <img src="pictures/Community_4_distinct_movies.jpg" alt="Community_4_movie_wordCloud.jpg"/>
+  <h5 style="text-align: center;">Word cloud of Community 4's movie genres</h5>
+</figure>
+We see that the distinct genres in Community 4 are `Animation` and `Fantasy`.
+
+> As seen from all the word clouds, we see that there are a combination of genres that are distinct among the communities. For example in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". 
+
+Through our text analysis of tags, we found that while these communities do share some similarities between them, they also their distinct differences between them. Thus, we would think that forming these communities by movie genres is a reasonable assumption.
 
 ***
 ## 6. Conclusion 
+<div class="alert alert-block alert-info">
+Our project focuses on the analysis on the movie reviews network and the analysis on the tags given by each user. Based on the community detected in the movie reviews network, it inspires us to further find out the potential characteristics that defines each community. We have looked from 4 perspectives, namly average ratings, sentiment scores, tags given by each community and movie genres watched by each community. Based on our analysis, we have concluded that the community are highly likely to be formed based on the movie genres that the users prefer. 
+
+Our project gives a quick insights to how people often choose the movie they like to watch. This will give movie producers a clearer target when they are trying to promote their movie. They can simply pick the group that prefer similar kind of movie genre. 
+
+However, we understand there are limitations in the current approach. Firstly, the data available for text analysis is limited due to a siginificant number of NA inputs. The limited amount of data will certainly affect the accuracy of the results. By tapping into other data sources such as the detailed reviews in imdb will likely to give us more insights on the movies that a particular community watches. 
+
+To further improve our projects, we will extract more information for the movies watched in each community, so our text analysis will extend beyond the tags given by the user. Furthermore, instead of using the happiness index dictionary, we can leverage on other dictionaries to compute sentiment score which are more suited for the analysis in this case.
+</div>
