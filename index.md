@@ -204,3 +204,16 @@ The sentiment score distributions and the average sentiment scores appear to be 
 
 ### 5.3 Text Analysis
 #### 5.3.1 Top Tags
+*       Top 1 frequently used tags by all users
+Through our research, we found that the most frequently used tag by all users is `Comedy`. 
+
+*       Top 30 frequently used tags by all users
+1.      comedy
+2.      atmospheric
+3.      dark
+4.      horror
+5.      based
+6.      scifi
+7.      ending
+
+By examining the most frequent used tags, we see that users usually give tags which are genres or themes of the movies they watch, and these tags tend to be neutral. Thus, we can infer that the tags given by users are closely associated with the movies they have watched. This suggests the community may be defined by different genres of movies the user watch. In the following parts, we will study the behaviour of users in selecting movie genres in various communities.
