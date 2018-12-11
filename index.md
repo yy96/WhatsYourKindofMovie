@@ -7,7 +7,7 @@ Here to find out more though a short video. (**Check out here!**)
 ***
 ## 2. Data Preparation 
 - **Raw Datasets**
-<br>
+<br/>
 We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains *27753444* ratings and *1108997* tag applications across *58098* movies. These data were created by *283228* users between January 09, 1995 and September 26, 2018. The total size of the datasets is *265MB*. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
 <style>
@@ -18,12 +18,12 @@ We will be using the available data sets due September 26, 2018 from the GroupLe
 
 Name of csv file | Size (KB) | Number of Rows | Content
 ---------------- | --------- | -------------- | -------
-Movies | 968 | 58098 | movieId: ID of a movie <br> Title: title of a movie from themoviedb.org <br> genres: genres which the movie belongs to
-Ratings | 741407 | 27753444 | userId: ID of the user <br> movieId: ID of the movie referenced from Movies dataset <br> rating: A number given by a user on a 5-star scale, with half-star increments <br> timestamp: Seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
-Tags | 38814 | 1108997 | userId: ID of the user <br>  movieId: ID of the movie <br> tag: A single word or short phrase description about the movie given by the user. <br> timestamp: Seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
-Links | 1238 | 58098 | movieId: identifier for movies used by [Movie Lens](https://movielens.org) <br> imdbId: identifier for movies used by [imdb](http://www.imdb.com) <br> tmdbId: identifier for movies used by [tmdb](https://www.themoviedb.org)
-Genome-Scores | 405129 | 14862528 | movieId: identifier of the movie <br> tagId: identifier of the tag, referenced from Genome-Tags dataset <br> relevance: Scores of the movie in a particular genre (how strong it exerts this kind of content in the movie)
-Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br> tag: name of each tag
+Movies | 968 | 58098 | movieId: ID of a movie <br/> Title: title of a movie from themoviedb.org <br/> genres: genres which the movie belongs to
+Ratings | 741407 | 27753444 | userId: ID of the user <br/> movieId: ID of the movie referenced from Movies dataset <br/> rating: A number given by a user on a 5-star scale, with half-star increments <br/> timestamp: Seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
+Tags | 38814 | 1108997 | userId: ID of the user <br/>  movieId: ID of the movie <br/> tag: A single word or short phrase description about the movie given by the user. <br> timestamp: Seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
+Links | 1238 | 58098 | movieId: identifier for movies used by [Movie Lens](https://movielens.org) <br/> imdbId: identifier for movies used by [imdb](http://www.imdb.com) <br/> tmdbId: identifier for movies used by [tmdb](https://www.themoviedb.org)
+Genome-Scores | 405129 | 14862528 | movieId: identifier of the movie <br/> tagId: identifier of the tag, referenced from Genome-Tags dataset <br/> relevance: Scores of the movie in a particular genre (how strong it exerts this kind of content in the movie)
+Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br/> tag: name of each tag
 
 {: .tablelines}
 
@@ -33,8 +33,8 @@ The data retrieved from the websites are in separate files. For the easy manipul
 
 Name of csv file | Source Table | Content
 ---------------- | ------------ | -------
-Movie Master | Links <br/> Movies | **movieId: primary key** \n\n Title \n\n genres \n\n imdbId \n\n tmdbId
-Review Master | Ratings \n\n Tags | **userId_movieId: primary key** \n\n userId \n\n movieId \n\n rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored \n\n timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored \n\n tag_combined: stores all the tags for the user for this particular movie \n\n timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
+Movie Master | Links <br/><br/> Movies | **movieId: primary key** <br/><br/> Title <br/><br/> genres <br/><br/> imdbId <br/><br/> tmdbId
+Review Master | Ratings <br/><br/> Tags | **userId_movieId: primary key** <br/><br/> userId <br/><br/> movieId <br/><br/> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br/><br/> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br/><br/> tag_combined: stores all the tags for the user for this particular movie <br/><br/> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
 
 ***
 ## 3. Network Analysis
@@ -70,7 +70,7 @@ Number of connected components | 53
 
 {: .tablelines}
 
-<br>
+<br/>
 Degree Distribution plots:
 <figure style="text-align: center;">
   <img src="pictures/combined_degree_distribution.png" alt="Combined Degree distribution"/>
@@ -95,7 +95,7 @@ The top 3 values for degree centrality are as shown below. The top degree centra
 ------------------ | ------------------ | ----------------- 
 0.9125874125874126 | 0.7987012987012987 | 0.7562437562437563
 {: .tablelines}
-<br>
+<br/>
 - **Betweenness Centrality**
 > Betweenness centrality quantifies the number of times a node acts as a bridge along the 
 > shortest path between two other nodes.
@@ -110,7 +110,7 @@ The top 3 values for betweeness centrality are as shown below. The max value is 
 ------------------- | -------------------- | -------------------- 
 0.08480222837203849 | 0.038790113817311976 | 0.027062225532841173 
 {: .tablelines}
-<br>
+<br/>
 - **Eigenvector centrality**
 > The eigenvector centrality thesis read: A node is important if it is linked to by other 
 > important nodes. It is a measure of the influence of a node in a network.
@@ -173,7 +173,9 @@ From the network, we see that there are majority of users having low average sen
 </figure>
 
 Based on the scatter plot, there seems to be a weak negative correlation between the number of movies an user watch and the average sentiment score the user gives. However, we need to note the results might not be accurate due to the limited sample size. This is due to there are a significant number of NAs which have to be excluded from the analysis, thus, limiting the sample size for the investigation.
+
 ***
+
 ## 4. Community Detection
 <figure style="text-align: center;">
   <img src="pictures/Community_network.jpg" alt="Community network"/>
@@ -181,7 +183,9 @@ Based on the scatter plot, there seems to be a weak negative correlation between
 </figure>
 
 Using python's Louvain community detection algorithm to identifiy communities in a graph, we found that there are `4` communities hidding in our network. While this is a rather dense network, the nodes belong to the same community are closely clustered together. However, it is hard to assess the clear distinction between different communities. In the following section, we will move on to explore more about the common traits and distinct characteristics of each section.
+
 ***
+
 ## 5. Investigation on Characteristics among Communities 
 After obtaining four communities from the previous section, we would like to study further on how the communities are formed and what the distinct characteristics of each community are. We will be focusing on the following criterias for study: **Average ratings**, **Sentimental scores**, **Tags analysis** and **Movie genres**. 
 
@@ -421,7 +425,7 @@ We see that the distinct genres in Community 3 are `Fantasy` and `Mystery`.
 We see that the distinct genres in Community 4 are `Animation` and `Fantasy`.
 
 
-> As seen from all the word clouds, we see that there are a combination of genres that are distinct among the communities. For example in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". <br><br>
+> As seen from all the word clouds, we see that there are a combination of genres that are distinct among the communities. For example in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". <br/><br/>
 Through our text analysis of tags, we found that while these communities do share some similarities between them, they also their distinct differences between them. Thus, we would think that forming these communities by movie genres is a reasonable assumption.
 
 ***
