@@ -32,8 +32,8 @@ The data retrieved from the websites are in separate files. For the easy manipul
 
 Name of csv file | Source Table | Content
 ---------------- | ------------ | -------
-Movie Master | Links <br> Movies | **movieId: primary key** <br> Title <br> genres <br> imdbId <br> tmdbId
-Review Master | Ratings <br> Tags | **userId_movieId: primary key** <br> userId <br> movieId <br> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br> tag_combined: stores all the tags for the user for this particular movie <br> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
+Movie Master | Links \n\n Movies | **movieId: primary key** \n\n Title \n\n genres \n\n imdbId \n\n tmdbId
+Review Master | Ratings \n\n Tags | **userId_movieId: primary key** \n\n userId \n\n movieId \n\n rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored \n\n timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored \n\n tag_combined: stores all the tags for the user for this particular movie \n\n timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
 
 ***
 ## 3. Network Analysis
@@ -415,7 +415,7 @@ We see that the distinct genres in Community 4 are `Animation` and `Fantasy`.
 
 
 > As seen from all the word clouds, we see that there are a combination of genres that are distinct among the communities. For example in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". <br><br>
-sThrough our text analysis of tags, we found that while these communities do share some similarities between them, they also their distinct differences between them. Thus, we would think that forming these communities by movie genres is a reasonable assumption.
+Through our text analysis of tags, we found that while these communities do share some similarities between them, they also their distinct differences between them. Thus, we would think that forming these communities by movie genres is a reasonable assumption.
 
 ***
 ## 6. Conclusion 
