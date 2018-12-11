@@ -39,7 +39,7 @@ The data retrieved from the websites are in separate files. In order to facilita
 Name of csv file | Source Table | Content
 ---------------- | ------------ | -------
 Movie Master | Links <br/><br/> Movies | **movieId: primary key** Title <br/> genres <br/> imdbId <br/> tmdbId
-Review Master | Ratings <br/><br/> Tags | **userId_movieId: primary key** <br/> userId <br/> movieId <br/> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br/> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br/> tag_combined: stores all the tags for the user for this particular movie <br/> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
+Review Master | Ratings <br/><br/> Tags | **userId_movieId: primary key** <br/> userId <br/> movieId <br/> rating_combined: Ratings it is for the user and the particular movie. If there are multiple entries for the uerId_movieId, an average value is calculated and stored. <br/> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored. <br/> tag_combined: Stores all the tags given by the user for this particular movie in a list. <br/> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored.
 
 ***
 ## 3. Network Analysis
