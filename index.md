@@ -267,31 +267,31 @@ By examining the most frequent used tags, we see that users usually give tags wh
   <img src="pictures/Community_1_tags_wordCloud.jpg" alt="Word cloud of Community 1's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 1's tags</h5>
 </figure>
-Words such as `might`, `opera`, `heist` and `madrid` defines community one as they are much bigger in size and can be easily notced in the word cloud. We also see words such as `comedy`, `horror`, `family` that describes genres of movies. This suggest that majority of community one users tend to watch such genres.
+Words such as `might`, `opera`, `heist` and `madrid` define community one as they are much bigger in size and can be easily noticed in the word cloud. We also see words such as `comedy`, `horror`, `family` that describes genres of movies. This suggest that majority of community one users tend to watch such genres.
 
 *       **Community 2**
 <figure style="text-align: center;">
   <img src="pictures/Community_2_tags_wordCloud.jpg" alt="Word cloud of Community 2's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 2's tags</h5>
 </figure>
-Words such as `witch`, `fantasy`, `comedy` defines community two. These words suggest that community two users tend to watch fairy tale, cartoonic genres of movies or movies that contain more imaginery elements. Furthermore, we also see words such as `ghibli`, `animation` and `foreign` which may also suggest they watch movies that are made in other countries such as Japan.
+Words such as `witch`, `fantasy`, `comedy` define community two. These words suggest that community two users tend to watch fairy tale, cartoonic genres of movies or movies that contain more imaginery elements. Furthermore, we also see words such as `ghibli`, `animation` and `foreign` which may also suggest they watch movies that are made in other countries such as Japan.
 
 *       **Community 3**
 <figure style="text-align: center;">
   <img src="pictures/Community_3_tags_wordCloud.jpg" alt="Word cloud of Community 3's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 3's tags</h5>
 </figure>
-Words such as `century`, `18th` and `conversation` defines community three. We also see words such as `lewis`, `austen` which are possibly the people related to the movie. For example, austen may refer to Jane Austen and the books that are written by her. Her stories are mostly based on the lives in 18th. This corresponds to the highlighted 18th in the word cloud. Time in the movie production seems to be an important characteristic for this community. The users in this community are likely to have a preference for movies that features the stories during 18th and 19th centuries. They might be in favour of the production by particular writer or actor.
+Words such as `century`, `18th` and `conversation` define community 3. We also see words such as `lewis`, `austen` which are possibly the people related to the movie. For example, austen may refer to Jane Austen and the books that are written by her. Her stories are mostly based on the lives in 18th. This corresponds to the highlighted 18th in the word cloud. Time in the movie production seems to be an important characteristic for this community. The users in this community are likely to have a preference for movies that feature the stories during 18th and 19th centuries. They might be in favour of the production by particular writer or actor.
 
 *       **Community 4**
 <figure style="text-align: center;">
   <img src="pictures/Community_4_tags_wordCloud.jpg" alt="Word cloud of Community 4's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 4's tags</h5>
 </figure>
-As we understand previously, community four is much smaller by size compared to other communities. Thus, the tags featured in the word cloud will also be less. It is interesting to note that the top 10 important tags shares the same score. This means that each of these tags hold equal importance in defining community four. Words such as `informatics`, `education`, `tearjerking`, inspirational seems to suggest that community four users tend to movies that are more informative and have educational values. In particular, there are quite a number of words that are related to a specifc academic topic such as informatics, crptography and code. 
+As we understand previously, community 4 is much smaller by size compared to other communities. Thus, the tags featured in the word cloud will also be less. Words such as `informatics`, `education`, `tearjerking`, `inspirational` seem to suggest that community 4 users tend to watch movies that are more informative and have educational values. In particular, there are quite a number of words that are related to a specifc academic topic such as informatics, cryptography and code. 
 <br/>
 
-> Based on the word clouds generated for each community, the distinct characteristics for each community are highly related to movie genres. While each community has its own distinct characteristics, we realise there are some common traints among the communities. For example, comedy is seen in both community 1 and 2. Thus we are interested to further find the common traits among the communities and the non-common ones.
+> Based on the word clouds generated for each community, the distinct characteristics for each community are highly related to movie genres. While each community has its own distinct characteristics, we realise there are some common traints among the communities. For example, comedy is seen in both community 1 and 2. Thus, we are interested to find out more about the common traits among the communities and the non-common ones.
 
 #### 5.3.3 Common Tags among Communities
 1.      comedy
@@ -319,7 +319,7 @@ The top 5 tags for community 1 are very much related to the *excitement* of the 
 4.      inspirational
 5.      friendship
 
-The tags highlighted in community 2 are more related to *emotional feelings* and *relationship*. They put the emphasis on the emotional touch created by the movie. This group of users probably favours more for movies that are emotional themes. 
+The tags highlighted in community 2 are more related to *emotional feelings* and *relationship*. They put the emphasis on the emotional touch created by the movie. This group of users probably favours more for movies that are related to emotional themes. 
 
 *       **Top 5 non-common tags given by *Community 3* users**
 1.      alan
@@ -328,7 +328,7 @@ The tags highlighted in community 2 are more related to *emotional feelings* and
 4.      period
 5.      austen
 
-This group of users seems to have a mixed taste. Both `scifi` and `period` are highlighted in the top 5 tags. While scifi indicates they have a favour towards science fiction which are things that are more modern, period and `austen` indicate they do have a favour towards movies that are developed from well-known literatures as well. 
+This group of users seems to have a mixed taste. Both `scifi` and `period` are highlighted in the top 5 tags. While scifi indicates they have a favour towards science fiction which are things that are more modern, `period` and `austen` indicate they do have a favour towards movies that are developed from well-known literatures as well. 
 
 *       **Top 5 non-common tags given by *Community 4* users**
 1.      motivation
@@ -337,9 +337,9 @@ This group of users seems to have a mixed taste. Both `scifi` and `period` are h
 4.      true
 5.      bittersweet
 
-For the last community, the words are all pretty positive. This group of users seem to prefer the movies that pass a positive information by inferring from text including `motivation` and `inspirational`. They are looking for the element of growth in the movies they would like to watch. 
+For the last community, the words have positive conocation . This group of users seems to prefer the movies that pass a positive information by inferring from text including `motivation` and `inspirational`. They are looking for the element of growth in the movies they would like to watch. 
 <br/>
-> By looking at the tags, we find out the tags for each community are very much linked to different movie genres. Thus, we would like further find out the movie genres that are related to each communities and explore the common and distinct movie genres favoured by different communities.
+> By looking at the tags, we find out the tags for each community are very much linked to different movie genres. Thus, we would like to further find out the movie genres that are related to each community and explore the common and distinct movie genres favoured by different communities.
 
 ### 5.4 Genre Analysis
 #### 5.4.1 Top Movie Genres for each Community
@@ -348,37 +348,30 @@ For the last community, the words are all pretty positive. This group of users s
   <img src="pictures/Community_1_movie_wordCloud.jpg" alt="Community_1_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 1's movie genres</h5>
 </figure>
-Community 1 users likes to watch `Drama`, `Action`, `Comedy`, `Thriller` movies genres. These genres of movies often contain the dramatic plots.
+Community 1 users like to watch `Drama`, `Action`, `Comedy`, `Thriller` movies genres. These genres of movies often contain the dramatic plots.
 
 *       **Community 2**
 <figure style="text-align: center;">
   <img src="pictures/Community_2_movie_wordCloud.jpg" alt="Community_2_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 2's movie genres</h5>
 </figure>
-We see that users from Community 2 likes to watch `Drama`, `Comedy`, `Thriller` and `Action` movies. `Romance` and `Adventure` seems to stand out next which suggest this genre could be distinctive to this community.
+We see that users from Community 2 like to watch `Drama`, `Comedy`, `Thriller` and `Action` movies. `Romance` and `Adventure` seems to stand out next which suggest this genre could be distinctive to this community.
 
 *       **Community 3**
 <figure style="text-align: center;">
   <img src="pictures/Community_3_movie_wordCloud.jpg" alt="Community_3_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
 </figure>
-Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
-
-*       **Community 3**
-<figure style="text-align: center;">
-  <img src="pictures/Community_3_movie_wordCloud.jpg" alt="Community_3_movie_wordCloud.jpg"/>
-  <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
-</figure>
-Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
+Like the previous two communities, users from Community 3 like to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
 
 *       **Community 4**
 <figure style="text-align: center;">
   <img src="pictures/Community_4_movie_wordCloud.jpg" alt="Community_4_movie_wordCloud.jpg"/>
   <h5 style="text-align: center;">Word cloud of Community 4's movie genres</h5>
 </figure>
-Like the previous three communities, users from Community 3 likes to watch `Action`, `Drama` and `Comedy` movies. Surprisingly, `Thriller` is not the top in the list of most watched genres. We also observed that users from Community 4 have a tendency to watch `Adventure` genre as well. 
+Like the previous three communities, users from Community 4 like to watch `Action`, `Drama` and `Comedy` movies. Surprisingly, `Thriller` is not the top in the list of most watched genres. We also observed that users from Community 4 have a tendency to watch `Adventure` genre as well. 
 
-> As we observed, Action, Comedy and Drama are the most common movie genres among users from all four communities we have. Tags which are likely to be associated with Action movies such as "predictable", "dark" and "twist" are thus the top common tags for all communities. <br/><br/>
+> As we observed, Action, Comedy and Drama are the most common movie genres among users from all 4 communities we have. Tags which are likely to be associated with Action movies such as "predictable", "dark" and "twist" are thus the top common tags for all communities. <br/><br/>
 On the other hand, we also notices the difference in the communities. <br/><br/>
 Other than Action movies, Community 1 users tend to watch Horror movies which explains its unique tags such as "atmospheric". Users in Community 2 tend to watch Romance and Adventure movies, thus the top unique tags for them are words like "love", "romance" and "inspirational". Community 3 users prefer movies of Sci-Fi and Romance. This leads to tags such as "romantic" and "scifi". While users from Community 4 are more interested in Adventure and Thriller movies. This aligns with its top tags of "survival" and "foster" (foster relationships during an adventure). <br/><br/>
 Besides looking at the general picture for each community, we would like to further explore the distinctive characteristics for each community.
