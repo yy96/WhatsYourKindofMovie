@@ -372,7 +372,7 @@ Like the previous two communities, users from Community 3 like to watch `Action`
 Like the previous three communities, users from Community 4 like to watch `Action`, `Drama` and `Comedy` movies. Surprisingly, `Thriller` is not the top in the list of most watched genres. We also observed that users from Community 4 have a tendency to watch `Adventure` genre as well. 
 
 > As we observed, Action, Comedy and Drama are the most common movie genres among users from all 4 communities we have. Tags which are likely to be associated with Action movies such as "predictable", "dark" and "twist" are thus the top common tags for all communities. <br/><br/>
-On the other hand, we also notices the difference in the communities. <br/><br/>
+On the other hand, we also noticed the difference in the communities. <br/><br/>
 Other than Action movies, Community 1 users tend to watch Horror movies which explains its unique tags such as "atmospheric". Users in Community 2 tend to watch Romance and Adventure movies, thus the top unique tags for them are words like "love", "romance" and "inspirational". Community 3 users prefer movies of Sci-Fi and Romance. This leads to tags such as "romantic" and "scifi". While users from Community 4 are more interested in Adventure and Thriller movies. This aligns with its top tags of "survival" and "foster" (foster relationships during an adventure). <br/><br/>
 Besides looking at the general picture for each community, we would like to further explore the distinctive characteristics for each community.
 
@@ -406,7 +406,7 @@ We see that the distinct genres in Community 3 are `Fantasy` and `Mystery`.
 We see that the distinct genres in Community 4 are `Animation` and `Fantasy`.
 
 
-> As seen from all the word clouds, we see that there are a combination of genres that are distinct among the communities. For example in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". <br/><br/>
+> As seen from all the word clouds, there are a combination of genres that are distinct among the communities. For example, in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". <br/><br/>
 Through our text analysis of tags, we found that while these communities do share some similarities between them, they also their distinct differences between them. Thus, we would think that forming these communities by movie genres is a reasonable assumption.
 
 ***
