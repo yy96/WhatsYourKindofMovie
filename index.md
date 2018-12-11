@@ -33,7 +33,7 @@ The data retrieved from the websites are in separate files. For the easy manipul
 
 Name of csv file | Source Table | Content
 ---------------- | ------------ | -------
-Movie Master | Links \n\n Movies | **movieId: primary key** \n\n Title \n\n genres \n\n imdbId \n\n tmdbId
+Movie Master | Links <br/> Movies | **movieId: primary key** \n\n Title \n\n genres \n\n imdbId \n\n tmdbId
 Review Master | Ratings \n\n Tags | **userId_movieId: primary key** \n\n userId \n\n movieId \n\n rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored \n\n timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored \n\n tag_combined: stores all the tags for the user for this particular movie \n\n timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
 
 ***
