@@ -267,7 +267,7 @@ By examining the most frequent used tags, we see that users usually give tags wh
   <img src="pictures/Community_1_tags_wordCloud.jpg" alt="Word cloud of Community 1's tags"/>
   <h5 style="text-align: center;">Word cloud of Community 1's tags</h5>
 </figure>
-Words such as `might`, `opera`, `heist` and `madrid` define community one as they are much bigger in size and can be easily noticed in the word cloud. We also see words such as `comedy`, `horror`, `family` that describes genres of movies. This suggest that majority of community one users tend to watch such genres.
+Words such as `might`, `opera`, `heist` and `madrid` define community 1 as they are much bigger in size and can be easily noticed in the word cloud. We also see words such as `comedy`, `horror`, `family` that describes genres of movies. This suggest that majority of community 1 users tend to watch such genres.
 
 *       **Community 2**
 <figure style="text-align: center;">
