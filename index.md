@@ -38,7 +38,7 @@ Review Master | Ratings <br> Tags | **userId_movieId: primary key** <br> userId 
 
 ## 3. Network Analysis
 
-### 3.1 Netowrk Building
+### 3.1 Network Building
 The movie review network is constructed based on the following rules:
 ```
 Nodes - people who write the review for the movie 
@@ -141,17 +141,15 @@ We have constructed the network based on the rules mentioned above. The network 
 As the network is pretty dense, it is hard to deduct the relationship between the number of movies an user has watched and the avaerage ratings the user gives. Thus, we will investigate the relationship further by using a scatter plot.
 
 ![Ratings Network](pictures/Rating_network.jpg)
-\
-![Ratings Scatterplot](pictures/Rating_scatterplot.jpg)
-\
-The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
-- **Sentiment Score Network**
+![Ratings Scatterplot](pictures/Rating_scatterplot.jpg)
+
+The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
 #### 3.3.2 Reviews Network
 ![Reviews Network](pictures/Review_network.jpg)
 <figure>
-  <img src="{{site.url}}/assets/image.jpg" alt="my alt text"/>
+  <img src="pictures/Review_network.jpg" alt="my alt text"/>
   <figcaption>This is my caption text.</figcaption>
 </figure>
 
@@ -163,3 +161,25 @@ From the network, we see that there are majority of users having low average sen
 Based on the scatter plot, there seems to be a weak negative correlation between the number of movies an user watch and the average sentiment score the user gives. However, we need to note the results might not be accurate due to the limited sample size. This is due to there are a significant number of NAs which have to be excluded from the analysis, thus, limiting the sample size for the investigation.
 
 ## 4. Community Detection
+![Community network](pictures/Community_network.jpg)
+
+Using python's Louvain community detection algorithm to identifiy communities in a graph, we found that there are `4` communities hidding in our network. While this is a rather dense network, the nodes belong to the same community are closely clustered together. However, it is hard to assess the clear distinction between different communities. In the following section, we will move on to explore more about the common traits and distinct characteristics of each section.
+
+## 5. Investigation on Characteristics among Communities 
+After obtaining four communities from the previous section, we would like to study further on how the communities are formed and what the distinct characteristics of each community are. We will be focusing on the following criterias for study: **Average ratings**, **Sentimental scores**, **Tags analysis** and **Movie genres**. 
+
+### 5.1 Average Ratings among Communities
+In this section we would like to determine if the communities are split by their average ratings. 
+
+After we have identified the corresponding communities that each user belongs to, we calculated the *average rating score* for each user and gathered the proportion which they occupy in their respective community. 
+
+![Average ratings proportions](pictures/Average_rating_score_tables.jpg)
+
+If the communities are splited by average rating, then majority of the users in each community should have the corresponding average rating. However, looking at the top 5 rating groups of each community, they are less than 10% of their respective population. Hence, we would like to conclude that the communities are not split by the average ratings given by users.
+
+![Average rating vs Sentimental score](pictures/Rating_vs_sentiment_scatterplot.jpg)
+
+The above is the scatter plot of Average Rating VS Sentiment Score given by each user. We do not observe any obvious pattern in the plot, which suggests that there is no direct correlation between the average rating and sentiment score. Therefore, sentiment scores given by users could be another possible factor which the community formation is basd on. In the next section, we will determine if this hypothesis is true.
+
+### 5.2 Sentiment Scores among Communities
+#### 5.2.1 Distribution of Overall Sentiment Scores
