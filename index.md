@@ -147,7 +147,6 @@ As the network is pretty dense, it is hard to deduct the relationship between th
 The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
 #### 3.3.2 Reviews Network
-![Reviews Network](pictures/Review_network.jpg)
 <figure>
   <img src="pictures/Review_network.jpg" alt="my alt text"/>
   <figcaption style="center">Reviews Network</figcaption>
