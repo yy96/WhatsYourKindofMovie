@@ -49,7 +49,7 @@ Edge weights - number of movies that both node users watched in common
 The network is created as shown below
 
 <figure style="text-align: center;">
-  <img src="pictures/overall_network.png" alt="Movie Reviews network"/>
+  <img src="pictures/Movie_network_overall.jpg" alt="Movie Reviews network"/>
   <h5 style="text-align: center;">Movie Reviews network</h5>
 </figure>
 
