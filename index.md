@@ -146,19 +146,25 @@ The scatter plot can be roughly divided into 3 sections, the vertical line at th
 
 #### 3.3.2 Reviews Network
 <figure>
-  <img src="pictures/Review_network.jpg" alt="my alt text"/>
-  <figcaption text-align="center">Reviews Network</figcaption>
+  <img src="pictures/Review_network.jpg" alt="Review network"/>
+  <h5 style="text-align: center;">Reviews Network</h5>
 </figure>
 
 Similar to the ratings network (Section 3.3), users who have watched a greater number of movies has a larger sized node and users who have a higher average sentimental score are darker in color. 
 From the network, we see that there are majority of users having low average sentimental scores representing by the light colour nodes. They also tend to have watched a higher number of movies compared to those with high sentimental scores. This could be due to such users having a higher expectation of movies since they have watched good movies which have left a benchmark on how a good movie should be like.
 
-![Reviews scatterplot](pictures/Review_scatterplot.jpg)
+<figure>
+  <img src="pictures/Review_scatterplot.jpg" alt="Review scatterplot"/>
+  <h5 style="text-align: center;">Scatterplot of Total movies watched vs Sentiment score</h5>
+</figure>
 
 Based on the scatter plot, there seems to be a weak negative correlation between the number of movies an user watch and the average sentiment score the user gives. However, we need to note the results might not be accurate due to the limited sample size. This is due to there are a significant number of NAs which have to be excluded from the analysis, thus, limiting the sample size for the investigation.
 ***
 ## 4. Community Detection
-![Community network](pictures/Community_network.jpg)
+<figure>
+  <img src="pictures/Community_network.jpg" alt="Community network"/>
+  <h5 style="text-align: center;">Community network</h5>
+</figure>
 
 Using python's Louvain community detection algorithm to identifiy communities in a graph, we found that there are `4` communities hidding in our network. While this is a rather dense network, the nodes belong to the same community are closely clustered together. However, it is hard to assess the clear distinction between different communities. In the following section, we will move on to explore more about the common traits and distinct characteristics of each section.
 ***
@@ -170,11 +176,17 @@ In this section we would like to determine if the communities are split by their
 
 After we have identified the corresponding communities that each user belongs to, we calculated the *average rating score* for each user and gathered the proportion which they occupy in their respective community. 
 
-![Average ratings proportions](pictures/Average_rating_score_tables.jpg)
+<figure>
+  <img src="pictures/Average_rating_score_tables.jpg" alt="Average ratings proportions"/>
+  <h5 style="text-align: center;">Average ratings proportions</h5>
+</figure>
 
 If the communities are splited by average rating, then majority of the users in each community should have the corresponding average rating. However, looking at the top 5 rating groups of each community, they are less than 10% of their respective population. Hence, we would like to conclude that the communities are not split by the average ratings given by users.
 
-![Average rating vs Sentimental score](pictures/Rating_vs_sentiment_scatterplot.jpg)
+<figure>
+  <img src="pictures/Rating_vs_sentiment_scatterplot.jpg" alt="Average rating vs Sentimental score"/>
+  <h5 style="text-align: center;">Average rating vs Sentimental score</h5>
+</figure>
 
 The above is the scatter plot of Average Rating VS Sentiment Score given by each user. We do not observe any obvious pattern in the plot, which suggests that there is no direct correlation between the average rating and sentiment score. Therefore, sentiment scores given by users could be another possible factor which the community formation is basd on. In the next section, we will determine if this hypothesis is true.
 
@@ -182,12 +194,12 @@ The above is the scatter plot of Average Rating VS Sentiment Score given by each
 #### 5.2.1 Distribution of Overall Sentiment Scores
 <figure>
   <img src="pictures/Sentiment_distribution_1.jpg" alt="sentiment plot 1"/>
-  <figcaption text-align="center">Sentiment distribution (with score 0)</figcaption>
+  <h5 style="text-align: center;">Sentiment distribution (with score 0)</h5>
 </figure>
 <br/>
 <figure>
   <img src="pictures/Sentiment_distribution_2.jpg" alt="sentiment plot 2"/>
-  <figcaption text-align="center">Sentiment distribution (without score 0)</figcaption>
+  <h5 style="text-align: center;">Sentiment distribution (without score 0)</h5>
 </figure>
 
 Words with sentiment score of 0 are usually neutral or not included in the happiness index table. While we study the distribution of overall sentiment scores given by all users, we discard those of 0 sentiment score and find that the rest of the scores actually follow a normal distribution, with mean of 6, which is slightly positive. 
@@ -195,7 +207,7 @@ Words with sentiment score of 0 are usually neutral or not included in the happi
 #### 5.2.2 Sentiment Scores for each Communities
 <figure>
   <img src="pictures/Sentimental_scores.jpg" alt="Sentimental scores for each community"/>
-  <figcaption text-align="center">Sentiment scores for each community</figcaption>
+  <h5 style="text-align: center;">Sentiment scores for each community</h5>
 </figure>
 
 The sentiment score distributions and the average sentiment scores appear to be similar for first three community groups. Community 4 could be considered as an outlier as there are only 70 users included and 2 users with non-zero sentiment scores. Thus, we would like conclude that the communities is not split based on sentiment scores.
@@ -245,28 +257,28 @@ Looking at the top 10 most important tags ranked based on TF-IDF, the score obta
 *       **Community 1**
 <figure>
   <img src="pictures/Community_1_tags_wordCloud.jpg" alt="Word cloud of Community 1's tags"/>
-  <figcaption text-align="center">Word cloud of Community 1's tags</figcaption>
+  <h5 style="text-align: center;">Word cloud of Community 1's tags</h5>
 </figure>
 Words such as might, opera, heist and madrid defines community one as they are much bigger in size and can be easily notced in the word cloud. We also see words such as comedy, horror, family that describes genres of movies. This suggest that majority of community one users tend to watch such genres.
 
 *       **Community 2**
 <figure>
   <img src="pictures/Community_2_tags_wordCloud.jpg" alt="Word cloud of Community 2's tags"/>
-  <figcaption text-align="center">Word cloud of Community 2's tags</figcaption>
+  <h5 style="text-align: center;">Word cloud of Community 2's tags</h5>
 </figure>
 Words such as witch, fantasy, comedy defines community two. These words suggest that community two users tend to watch fairy tale, cartoonic genres of movies or movies that contain more imaginery elements. Furthermore, we also see words such as ghibli, animation and foreign which may also suggest they watch movies that are made in other countries such as Japan.
 
 *       **Community 3**
 <figure>
   <img src="pictures/Community_3_tags_wordCloud.jpg" alt="Word cloud of Community 3's tags"/>
-  <figcaption text-align="center">Word cloud of Community 3's tags</figcaption>
+  <h5 style="text-align: center;">Word cloud of Community 3's tags</h5>
 </figure>
 Words such as century, 18th and conversation defines community three. We also see words such as lewis, austen which are possibly the people related to the movie. For example, austen may refer to Jane Austen and the books that are written by her. Her stories are mostly based on the lives in 18th. This corresponds to the highlighted 18th in the word cloud. Time in the movie production seems to be an important characteristic for this community. The users in this community are likely to have a preference for movies that features the stories during 18th and 19th centuries. They might be in favour of the production by particular writer or actor.
 
 *       **Community 4**
 <figure>
   <img src="pictures/Community_4_tags_wordCloud.jpg" alt="Word cloud of Community 4's tags"/>
-  <h6 position="center">Word cloud of Community 4's tags</h6>
+  <h5 style="text-align: center;">Word cloud of Community 4's tags</h5>
 </figure>
 As we understand previously, community four is much smaller by size compared to other communities. Thus, the tags featured in the word cloud will also be less. It is interesting to note that the top 10 important tags shares the same score. This means that each of these tags hold equal importance in defining community four. Words such as informatics, education, tearjerking, inspirational seems to suggest that community four users tend to movies that are more informative and have educational values. In particular, there are quite a number of words that are related to a specifc academic topic such as informatics, crptography and code.
 
@@ -325,35 +337,35 @@ For the last community, the words are all pretty positive. This group of users s
 *       **Community 1**
 <figure>
   <img src="pictures/Community_1_movie_wordCloud.jpg" alt="Community_1_movie_wordCloud.jpg"/>
-  <h6 position="center">Word cloud of Community 1's movie genres</h6>
+  <h5 style="text-align: center;">Word cloud of Community 1's movie genres</h5>
 </figure>
 Community 1 users likes to watch `Drama`, `Action`, `Comedy`, `Thriller` movies genres. These genres of movies often contain the dramatic plots.
 
 *       **Community 2**
 <figure>
   <img src="pictures/Community_2_movie_wordCloud.jpg" alt="Community_2_movie_wordCloud.jpg"/>
-  <h6 position="center">Word cloud of Community 2's movie genres</h6>
+  <h5 style="text-align: center;">Word cloud of Community 2's movie genres</h5>
 </figure>
 We see that users from Community 2 likes to watch `Drama`, `Comedy`, `Thriller` and `Action` movies. `Romance` and `Adventure` seems to stand out next which suggest this genre could be distinctive to this community.
 
 *       **Community 3**
 <figure>
   <img src="pictures/Community_3_movie_wordCloud.jpg" alt="Community_3_movie_wordCloud.jpg"/>
-  <h6 position="center">Word cloud of Community 3's movie genres</h6>
+  <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
 </figure>
 Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
 
 *       **Community 3**
 <figure>
   <img src="pictures/Community_3_movie_wordCloud.jpg" alt="Community_3_movie_wordCloud.jpg"/>
-  <h6 style="text-align: center;">Word cloud of Community 3's movie genres</h6>
+  <h5 style="text-align: center;">Word cloud of Community 3's movie genres</h5>
 </figure>
 Like the previous two communities, users from Community 3 likes to watch `Action`, `Comedy`, `Thriller` and `Drama` movies. The distinct genres here could be `Romance` and `Sci-Fi`.
 
 *       **Community 4**
 <figure>
   <img src="pictures/Community_4_movie_wordCloud.jpg" alt="Community_4_movie_wordCloud.jpg"/>
-  <h6 style="text-align: center;">Word cloud of Community 4's movie genres</h6>
+  <h5 style="text-align: center;">Word cloud of Community 4's movie genres</h5>
 </figure>
 Like the previous three communities, users from Community 3 likes to watch `Action`, `Drama` and `Comedy` movies. Surprisingly, `Thriller` is not the top in the list of most watched genres. We also observed that users from Community 4 have a tendency to watch `Adventure` genre as well. 
 
