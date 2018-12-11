@@ -47,10 +47,12 @@ Edge weights - number of movies that both node users watched in common
 ```
 The network is created as shown below
 
-![Image](pictures/overall_network.png)
+<figure style="text-align: center;">
+  <img src="pictures/overall_network.png" alt="Movie Reviews network"/>
+  <h5 style="text-align: center;">Movie Reviews network</h5>
+</figure>
 
 ### 3.2 Network Attributes
-
 #### 3.2.1 Sombe Basic Stats for the Network
 
 <style>
@@ -69,7 +71,11 @@ Number of connected components | 53
 
 <br>
 Degree Distribution plots:
-![Image](pictures/combined_degree_distribution.png)
+<figure style="text-align: center;">
+  <img src="pictures/combined_degree_distribution.png" alt="Combined Degree distribution"/>
+  <h5 style="text-align: center;">Combined Degree distribution</h5>
+</figure>
+
 As seen from the loglog plot, the general shape of the degree distribution of the movie review network follows a power law where a large number of nodes have small connections and small number of nodes have large connctions.
 
 #### 3.2.2 Centrality Measures
