@@ -90,7 +90,7 @@ As seen from the loglog plot, the general shape of the degree distribution of th
 > Degree centrality is the most basic method of defining centrality, basing the centrality 
 > only on the number of neighbours a node has.
 
-The top 3 values for degree centrality are as shown below. The top degree centrality is rather high this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
+The top 3 values for degree centrality are as shown below. The top degree centrality is rather high, this suggests they are highly connected to other nodes in the network. Thus, these nodes are most likely to be clustered in the center of the network.
 <style>
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
@@ -132,7 +132,7 @@ The top 3 values for eigenvector centrality are as shown below. The top eigenvec
 {: .tablelines}
 
 ### 3.3 Potential Correlation in Ratings Network 
-In this section we are aiming to the potential correlation by assigning relevant information as the attributes for the nodes. We are interested to find out the relationship between the active-ness of an user and the average ratings/sentiment scores he/she gives.The defintion for the terms used are as follow:
+In this section we are aiming to study the potential correlation by assigning relevant information as the attributes for the nodes. We are interested to find out the relationship between the *active-ness of an user* and the *average ratings/sentiment scores* he/she gives.The defintion for the terms used are as follow:
 
 ```
 Active-ness - It is defined by the number of distinct movies a particular user reviewed.
@@ -141,7 +141,7 @@ Average Sentiment Scores - Sentiment scores are calculated based on the tags giv
 This is the average results for the sentiment scores derived from all the tags the user has given.
 ```
 
-We will approach the problem by building *Rating Netwok* and *Sentiment Score Network*. Besides the rules for the general network, the additional features for these new networks will be:
+We will approach the problem by building *Ratings Network* and *Sentiment Scores Network*. Besides the rules for the general network, the additional features for these new networks will be:
 ```
 Node Size - Number of distinct movies the user watched
 Node Colour - The average ratings/sentiment scores the user give based onthe colour gradient
@@ -149,7 +149,7 @@ Node Colour - The average ratings/sentiment scores the user give based onthe col
 
 #### 3.3.1 Ratings Network
 We have constructed the network based on the rules mentioned above. The network is as shown below. As mentioned before, the node size represents the number of movie a user has watched. The color gradient represent the average rating score which each user gives. The higher the rating score, the darker the color. 
-As the network is pretty dense, it is hard to deduct the relationship between the number of movies an user has watched and the avaerage ratings the user gives. Thus, we will investigate the relationship further by using a scatter plot.
+As the network is pretty dense, it is hard to deduce the relationship between the number of movies an user has watched and the avaerage ratings the user gives. Thus, we will investigate the relationship further by using a scatter plot.
 
 <figure style="text-align: center;">
   <img src="pictures/Rating_network.jpg" alt="Ratings network"/>
@@ -163,13 +163,13 @@ As the network is pretty dense, it is hard to deduct the relationship between th
 
 The scatter plot can be roughly divided into 3 sections, the vertical line at the front, slanted line with steep graident in the middle and horizontal line at the end. Both vertical line and horizontal line suggest there is no correlation between the acive-ness of an user and the average ratings he/she gives, while the steep gradient for the slanted line indicates weak correlation. However, the percentage of points fall in the middle section (slanted line with steep gradient) is rather small compared to other 2 sections. Thus, we would conclude there is very weak correlation between the active-ness of an user and the average ratings he/she gives.
 
-#### 3.3.2 Reviews Network
+#### 3.3.2 Sentiment Scores Network
 <figure style="text-align: center;">
-  <img src="pictures/Review_network.jpg" alt="Review network"/>
-  <h5 style="text-align: center;">Reviews Network</h5>
+  <img src="pictures/Review_network.jpg" alt="Sentiment Scores network"/>
+  <h5 style="text-align: center;">Sentiment Scores Network</h5>
 </figure>
 
-Similar to the ratings network (Section 3.3), users who have watched a greater number of movies has a larger sized node and users who have a higher average sentimental score are darker in color. 
+Similar to the ratings network (Section 3.3.1), users who have watched a greater number of movies have a larger sized node and users who have a higher average sentimental score are darker in color. 
 From the network, we see that there are **majority of users having low average sentimental scores** representing by the light colour nodes. *They also tend to have watched a higher number of movies compared to those with high sentimental scores.* This could be due to such users having a higher expectation of movies since they have watched good movies which have left a benchmark on how a good movie should be like.
 
 <figure style="text-align: center;">
@@ -416,7 +416,7 @@ Through our text analysis of tags, we found that while these communities do shar
 
 ***
 ## 6. Conclusion 
-Our project focuses on the analysis on the movie reviews network and the analysis on the tags given by each user. Based on the community detected in the movie reviews network, it inspires us to further find out the potential characteristics that defines each community. We have looked from 4 perspectives, namly average ratings, sentiment scores, tags given by each community and movie genres watched by each community. Based on our analysis, we have concluded that the community are highly likely to be formed based on the movie genres that the users prefer. 
+Our project focuses on the analysis on the movie Sentiment Scores network and the analysis on the tags given by each user. Based on the community detected in the movie Sentiment Scores network, it inspires us to further find out the potential characteristics that defines each community. We have looked from 4 perspectives, namly average ratings, sentiment scores, tags given by each community and movie genres watched by each community. Based on our analysis, we have concluded that the community are highly likely to be formed based on the movie genres that the users prefer. 
 
 
 Our project gives a quick insights to how people often choose the movie they like to watch. This will give movie producers a clearer target when they are trying to promote their movie. They can simply pick the group that prefer similar kind of movie genre. 
