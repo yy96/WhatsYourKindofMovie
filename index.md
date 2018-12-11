@@ -4,7 +4,7 @@ Our project will be focusing on the movie industry. Based on the dataset obtaine
 Here to find out more though a short video. (**Check out here!**)
 <span style="text-align: center;">
  [![Check Out the Video!](https://j.gifs.com/4RgkL2.gif)](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=)
-<span>
+</span>
 
 ***
 ## 2. Data Preparation 
