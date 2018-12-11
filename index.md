@@ -413,7 +413,7 @@ We see that the distinct genres in Community 3 are `Fantasy` and `Mystery`.
 We see that the distinct genres in Community 4 are `Animation` and `Fantasy`.
 
 
-> As seen from all the word clouds, we see that there are a combination of genres that are distinct among the communities. For example in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". 
+> As seen from all the word clouds, we see that there are a combination of genres that are distinct among the communities. For example in community 1, we see that `Horror` and `Animation` genres is unique to them. This aligns with the top tags found such as "atmospheric". &nbsp;
 Through our text analysis of tags, we found that while these communities do share some similarities between them, they also their distinct differences between them. Thus, we would think that forming these communities by movie genres is a reasonable assumption.
 
 ***
