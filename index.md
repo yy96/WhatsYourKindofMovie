@@ -233,9 +233,13 @@ Words with sentiment score of 0 are usually neutral or not included in the happi
   <h5 style="text-align: center;">Sentiment scores for each community</h5>
 </figure>
 
-The sentiment score distributions and the average sentiment scores appear to be similar for first three community groups. Community 4 could be considered as an outlier as there are only 70 users included and 2 users with non-zero sentiment scores. Thus, we would like conclude that the communities is not split based on sentiment scores.
+The sentiment score distributions and the average sentiment scores appear to be similar for first three community groups. Community 4 could be considered as an outlier as there are only 70 users included and 2 users with non-zero sentiment scores. Thus, we can conclude that the communities is not split based on sentiment scores.
+
+From the review master table, there is information about the tags given by the users about the movies they watched. We would like to determine if these communities are formed by the tags that they have given. 
 
 ### 5.3 Text Analysis
+One way to perform our investigation is via *Text Analysis*. We will be analysing tags given by the users.
+
 #### 5.3.1 Top Tags
 *       **Top 1 frequently used tags by all users** <br/>
 Through our research, we found that the most frequently used tag by all users is `Comedy`. 
