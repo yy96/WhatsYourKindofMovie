@@ -8,8 +8,6 @@ Here to find out more though a short video. (**Check out here!**)
         </a>
 </div>
 
-[![Check Out the Video!](https://j.gifs.com/4RgkL2.gif)](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=)
-
 ***
 ## 2. Data Preparation 
 - **Raw Datasets**
