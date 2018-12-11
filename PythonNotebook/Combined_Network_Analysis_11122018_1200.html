@@ -16468,17 +16468,17 @@ If they are splited by average rating, the majority of the users in each communi
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># average rating of each user</span>
-<span class="n">user_rating</span> <span class="o">=</span> <span class="n">df_half</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;userId&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()[</span><span class="s1">&#39;rating_combined&#39;</span><span class="p">]</span>
-<span class="c1"># scatter plot for sentiment score vs average rating </span>
-<span class="c1"># no obvious pattern found </span>
-<span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">user_sentiment</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">user_sentiment</span><span class="p">[</span><span class="n">user</span><span class="p">]</span> <span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">user_sentiment</span><span class="p">[</span><span class="n">user</span><span class="p">],</span><span class="n">user_rating</span><span class="p">[</span><span class="n">user</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-<span class="c1">#plt.title(&quot;Sentiment score VS Number of Tags&quot;)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span> <span class="p">(</span><span class="s1">&#39;Average Rating that a user has given&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span> <span class="p">(</span><span class="s1">&#39;Overall Sentiment Scores&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># # average rating of each user</span>
+<span class="c1"># user_rating = df_half.groupby([&#39;userId&#39;]).mean()[&#39;rating_combined&#39;]</span>
+<span class="c1"># # scatter plot for sentiment score vs average rating </span>
+<span class="c1"># # no obvious pattern found </span>
+<span class="c1"># for user in user_sentiment:</span>
+<span class="c1">#     if user_sentiment[user] !=0:</span>
+<span class="c1">#         plt.scatter(user_sentiment[user],user_rating[user], s=10)</span>
+<span class="c1"># #plt.title(&quot;Sentiment score VS Number of Tags&quot;)</span>
+<span class="c1"># plt.ylabel (&#39;Average Rating that a user has given&#39;)</span>
+<span class="c1"># plt.xlabel (&#39;Overall Sentiment Scores&#39;)</span>
+<span class="c1"># plt.show()</span>
 </pre></div>
 
 </div>
