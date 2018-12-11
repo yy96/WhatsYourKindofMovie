@@ -192,4 +192,15 @@ The above is the scatter plot of Average Rating VS Sentiment Score given by each
   <figcaption text-align="center">Sentiment distribution (without score 0)</figcaption>
 </figure>
 
-Words with sentiment score of 0 are usually neutral or not included in the happiness index table. While we study the distribution of overall sentiment scores given by all users, we discard those of 0 sentiment score and find that the rest of the scores actually follow a normal distribution, with mean of 6, which is slightly positive.
+Words with sentiment score of 0 are usually neutral or not included in the happiness index table. While we study the distribution of overall sentiment scores given by all users, we discard those of 0 sentiment score and find that the rest of the scores actually follow a normal distribution, with mean of 6, which is slightly positive. 
+
+#### 5.2.2 Sentiment Scores for each Communities
+<figure>
+  <img src="pictures/Sentimental_scores.jpg" alt="Sentimental scores for each community"/>
+  <figcaption text-align="center">Sentiment scores for each community</figcaption>
+</figure>
+
+The sentiment score distributions and the average sentiment scores appear to be similar for first three community groups. Community 4 could be considered as an outlier as there are only 70 users included and 2 users with non-zero sentiment scores. Thus, we would like conclude that the communities is not split based on sentiment scores.
+
+### 5.3 Text Analysis
+#### 5.3.1 Top Tags
