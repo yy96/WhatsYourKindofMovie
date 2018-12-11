@@ -1,7 +1,7 @@
 ## 1. Introduction of the Project
 Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim **derive insights from movie review network and investigate the characteristics which define the communities in the network.** 
 
-Here to find out more though a short video. (**Check out here!**)
+Here to find out more though a short video. (<a href="https://www.youtube.com/watch?v=XTxMXeBN4kg&t="><b>Check out here!</b></a>)
 <div style="text-align: center;">
         <a href="https://www.youtube.com/watch?v=XTxMXeBN4kg&t=">
                 <img src="https://j.gifs.com/4RgkL2.gif" alt="Movie Reviews network"/>
@@ -12,7 +12,7 @@ Here to find out more though a short video. (**Check out here!**)
 ## 2. Data Preparation 
 - **Raw Datasets**
 <br/>
-We will be using the available data sets due September 26, 2018 from the GroupLens website. It contains *27753444* ratings and *1108997* tag applications across *58098* movies. These data were created by *283228* users between January 09, 1995 and September 26, 2018. The total size of the datasets is *265MB*. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
+We will be using the available datasets due September 26, 2018 from the GroupLens website. It contains *27753444* ratings and *1108997* tag applications across *58098* movies. The data was created by *283228* users between January 09, 1995 and September 26, 2018. The total size of the datasets is *265MB*. It consists of 6 csv files: ratings.csv, tags.csv, movies.csv, links.csv, genome-scores.csv and genome-tags.csv.
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
