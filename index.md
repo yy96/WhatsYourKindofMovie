@@ -2,9 +2,9 @@
 Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim **to investigate the preference of the audience and the characteristics of commonly rated good movies and bad movies.** 
 
 Here to find out more though a short video. (**Check out here!**)
-<span style="text-align: center;">
+<div style="text-align: center;">
  [![Check Out the Video!](https://j.gifs.com/4RgkL2.gif)](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=)
-</span>
+</div>
 
 ***
 ## 2. Data Preparation 
