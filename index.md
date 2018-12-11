@@ -58,7 +58,7 @@ The network is created as shown below
 </figure>
 
 ### 3.2 Network Attributes
-#### 3.2.1 Sombe Basic Stats for the Network
+#### 3.2.1 Some Basic Stats for the Network
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
