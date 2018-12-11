@@ -411,10 +411,10 @@ Through our text analysis of tags, we found that while these communities do shar
 
 ***
 ## 6. Conclusion 
-Our project focuses on the analysis on the movie Sentiment Scores network and the analysis on the tags given by each user. Based on the community detected in the movie Sentiment Scores network, it inspires us to further find out the potential characteristics that defines each community. We have looked from 4 perspectives, namly average ratings, sentiment scores, tags given by each community and movie genres watched by each community. Based on our analysis, we have concluded that the community are highly likely to be formed based on the movie genres that the users prefer. 
+Our project focuses on the analysis on the movie Sentiment Scores network and the analysis on the tags given by each user. Based on the community detected in the movie Sentiment Scores network, it inspires us to further find out the potential characteristics that defines each community. We have looked from 4 perspectives, namely average ratings, sentiment scores, tags given by each community and movie genres watched by each community. Based on our analysis, we have concluded that the community are highly likely to be formed based on the movie genres that the users prefer. 
 
 
-Our project gives a quick insights to how people often choose the movie they like to watch. This will give movie producers a clearer target when they are trying to promote their movie. They can simply pick the group that prefer similar kind of movie genre. 
+Our project gives a quick insight to how people often choose the movie they like to watch. This will give movie producers a clearer target when they are trying to promote their movie. They can simply pick the group that prefer similar kind of movie genre. 
 
 
 However, we understand there are limitations in the current approach. Firstly, the data available for text analysis is limited due to a siginificant number of NA inputs. The limited amount of data will certainly affect the accuracy of the results. By tapping into other data sources such as the detailed reviews in imdb will likely to give us more insights on the movies that a particular community watches. 
