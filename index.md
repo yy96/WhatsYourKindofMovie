@@ -3,8 +3,12 @@ Our project will be focusing on the movie industry. Based on the dataset obtaine
 
 Here to find out more though a short video. (**Check out here!**)
 <div style="text-align: center;">
- [![Check Out the Video!](https://j.gifs.com/4RgkL2.gif)](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=)
+        <a href="https://www.youtube.com/watch?v=XTxMXeBN4kg&t=">
+                <img src="https://j.gifs.com/4RgkL2.gif" alt="Movie Reviews network"/>
+        </a>
 </div>
+
+[![Check Out the Video!](https://j.gifs.com/4RgkL2.gif)](https://www.youtube.com/watch?v=XTxMXeBN4kg&t=)
 
 ***
 ## 2. Data Preparation 
