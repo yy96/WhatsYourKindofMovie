@@ -34,12 +34,12 @@ Genome-Tags | 18 | 1128 | tagId: identifier of the tag <br/> tag: name of each t
 
 - **Cleaned Datasets**
 
-The data retrieved from the websites are in separate files. For the easy manipulation of data for network analysis and text analysis. We have merged and joined the datasets based on their common keys and only kept the relevant information that is needed for the analysis. After the clean-up, there are 2 master table for the further analysis
+The data retrieved from the websites are in separate files. In order to facilitate the network and text analysis later, we have merged and joined the datasets based on their common keys and only kept the relevant information that is needed for the analysis. After the clean-up, there are 2 master table for the further analysis
 
 Name of csv file | Source Table | Content
 ---------------- | ------------ | -------
-Movie Master | Links <br/><br/> Movies | **movieId: primary key** <br/><br/> Title <br/><br/> genres <br/><br/> imdbId <br/><br/> tmdbId
-Review Master | Ratings <br/><br/> Tags | **userId_movieId: primary key** <br/><br/> userId <br/><br/> movieId <br/><br/> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br/><br/> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br/><br/> tag_combined: stores all the tags for the user for this particular movie <br/><br/> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
+Movie Master | Links <br/><br/> Movies | **movieId: primary key** Title <br/> genres <br/> imdbId <br/> tmdbId
+Review Master | Ratings <br/><br/> Tags | **userId_movieId: primary key** <br/> userId <br/> movieId <br/> rating_combined: ratings for the user and the particular movie. If thereare multiple entries for the uerId_movieId, an average value is calculated and stored <br/> timestamp_combined_ratings: If there are multiple entries for the userId_movieId, the earliest one is stored <br/> tag_combined: stores all the tags for the user for this particular movie <br/> timestamp_combined_tags: If there are multiple entries for the userId_movieId, the earliest one is stored
 
 ***
 ## 3. Network Analysis
