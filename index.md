@@ -148,10 +148,6 @@ The scatter plot can be roughly divided into 3 sections, the vertical line at th
 
 #### 3.3.2 Reviews Network
 ![Reviews Network](pictures/Review_network.jpg)
-<figure>
-  <img src="pictures/Review_network.jpg" alt="my alt text"/>
-  <figcaption>This is my caption text.</figcaption>
-</figure>
 
 Similar to the ratings network (Section 3.3), users who have watched a greater number of movies has a larger sized node and users who have a higher average sentimental score are darker in color. 
 From the network, we see that there are majority of users having low average sentimental scores representing by the light colour nodes. They also tend to have watched a higher number of movies compared to those with high sentimental scores. This could be due to such users having a higher expectation of movies since they have watched good movies which have left a benchmark on how a good movie should be like.
