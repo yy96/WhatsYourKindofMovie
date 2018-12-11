@@ -239,7 +239,7 @@ The sentiment score distributions and the average sentiment scores appear to be 
 *       **Top 1 frequently used tags by all users** <br/>
 Through our research, we found that the most frequently used tag by all users is `Comedy`. 
 
-| No.  | Tag | No.  | Tag | No.  | Tag | No.  | Tag |
+| No.  | Tag | No.  | Tag | No.  | Tag |
 | ------------- | ------------- | ------------- | ------------- |
 | 1 | comedy | 11 | plot | 21 | appealing |
 | 2 | atmospheric | 12 | visually | 22 | predictable |
