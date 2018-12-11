@@ -242,4 +242,35 @@ Through our research, we found that the most frequently used tag by all users is
 By examining the most frequent used tags, we see that users usually give tags which are genres or themes of the movies they watch, and these tags tend to be neutral. Thus, we can infer that the tags given by users are closely associated with the movies they have watched. This suggests the community may be defined by different genres of movies the user watch. In the following parts, we will study the behaviour of users in selecting movie genres in various communities.
 
 #### 5.3.2 WordCloud for each Community 
-*       **WordCloud for each Community** 
+Looking at the top 10 most important tags ranked based on TF-IDF, the score obtained are rather small. Thus, we need to transform the TF-IDF score when feeding to the word cloud generation. This is done by times the original TF-IDF score with a factor of 1000. The rationale of choosing 1000 is due the max TF-IDF being 0.00903 (3 significant figures) and after the product we will obain 9.03 which will roughly allow us to transform the scale to 1-10. Furthermore, the fact that the top 10 TF-IDF scores being small suggests, these tags are probably seen in other communities as well. It suggests there are common traints among the 4 communities identified. 
+
+*       **Community 1**
+<figure>
+  <img src="pictures/Sentiment_distribution_1.jpg" alt="sentiment plot 1"/>
+  <figcaption text-align="center">Sentiment distribution (with score 0)</figcaption>
+</figure>
+Words such as might, opera, heist and madrid defines community one as they are much bigger in size and can be easily notced in the word cloud. We also see words such as comedy, horror, family that describes genres of movies. This suggest that majority of community one users tend to watch such genres.
+
+*       **Community 2**
+<figure>
+  <img src="pictures/Sentiment_distribution_1.jpg" alt="sentiment plot 1"/>
+  <figcaption text-align="center">Sentiment distribution (with score 0)</figcaption>
+</figure>
+Words such as witch, fantasy, comedy defines community two. These words suggest that community two users tend to watch fairy tale, cartoonic genres of movies or movies that contain more imaginery elements. Furthermore, we also see words such as ghibli, animation and foreign which may also suggest they watch movies that are made in other countries such as Japan.
+
+*       **Community 3**
+<figure>
+  <img src="pictures/Sentiment_distribution_1.jpg" alt="sentiment plot 1"/>
+  <figcaption text-align="center">Sentiment distribution (with score 0)</figcaption>
+</figure>
+Words such as century, 18th and conversation defines community three. We also see words such as lewis, austen which are possibly the people related to the movie. For example, austen may refer to Jane Austen and the books that are written by her. Her stories are mostly based on the lives in 18th. This corresponds to the highlighted 18th in the word cloud. Time in the movie production seems to be an important characteristic for this community. The users in this community are likely to have a preference for movies that features the stories during 18th and 19th centuries. They might be in favour of the production by particular writer or actor.
+
+*       **Community 4**
+<figure>
+  <img src="pictures/Sentiment_distribution_1.jpg" alt="sentiment plot 1"/>
+  <figcaption text-align="center">Sentiment distribution (with score 0)</figcaption>
+</figure>
+As we understand previously, community four is much smaller by size compared to other communities. Thus, the tags featured in the word cloud will also be less. It is interesting to note that the top 10 important tags shares the same score. This means that each of these tags hold equal importance in defining community four. Words such as informatics, education, tearjerking, inspirational seems to suggest that community four users tend to movies that are more informative and have educational values. In particular, there are quite a number of words that are related to a specifc academic topic such as informatics, crptography and code.
+
+
+>       Based on the word clouds generated for each community, the distinct characteristics for each community are highly related to movie genres. While each community has its own distinct characteristics, we realise there are some common traints among the communities. For example, comedy is seen in both community 1 and 2. Thus we are interested to further find the common traits among the communities and the non-common ones.
