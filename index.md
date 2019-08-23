@@ -1,5 +1,7 @@
 ## 1. Introduction of the Project
+
 Our project will be focusing on the movie industry. Based on the dataset obtained from MovieLens, we aim **derive insights from movie review network and investigate the characteristics which define the communities in the network.** 
+
 
 Here to find out more though a short video. (<a href="https://www.youtube.com/watch?v=XTxMXeBN4kg&t="><b>Check out here!</b></a>)
 <div style="text-align: center;">
